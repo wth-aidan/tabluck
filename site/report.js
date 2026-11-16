@@ -56,7 +56,10 @@ const realPlace = (R, i) => parseInt(R.teamsBasic[i].rank, 10) || null;
 function adjCell(real, exp) {
   if (!exp) return "—";
   const adj = exp.rank, d = real == null ? 0 : real - adj;
-  const mv = d > 0 ? `<span class="mv" title="${d} place${d === 1 ? "" : "s"} higher than the real finish">▲${d}</span>` : d < 0 ? `<span class="mv" title="${-d} place${d === -1 ? "" : "s"} lower than the real finish">▼${-d}</span>` : `<span class="mv">=</span>`;
+  const ownT = exp.ownRank != null ? ` · only its own luck out: ${exp.ownRank}` : "";
+  if (!exp.clear) return `<b class="nc" title="Everyone's luck out${ownT}">${adj}</b> <span class="mv nc" title="No clear change: the real finish (${real}) is inside the 80% range${ownT}">≈</span><span class="rng" title="80% range">${exp.range80[0]}–${exp.range80[1]}</span>`;
+  if (exp.byOthers) return `<b class="nc">${adj}</b> <span class="mv nc" title="Moved by other teams' luck, not its own${ownT}">${d > 0 ? "▲" : "▼"}${Math.abs(d)}·</span><span class="rng">${exp.range80[0]}–${exp.range80[1]}</span>`;
+  const mv = d > 0 ? `<span class="mv mv-unl" title="${d} place${d === 1 ? "" : "s"} higher without luck: its luck cost it places">▲${d}</span>` : d < 0 ? `<span class="mv mv-lk" title="${-d} place${d === -1 ? "" : "s"} lower without luck: its luck gained it places">▼${-d}</span>` : `<span class="mv">=</span>`;
   return `<b>${adj}</b> ${mv}<span class="rng" title="80% range">${exp.range80[0]}–${exp.range80[1]}</span>`;
 }
 const counts = (rows, classes) => classes.map((c) => rows.filter((r) => r.cls === c).length);
@@ -145,11 +148,11 @@ function luckTables(R, S, state, open) {
     { key: "rank", label: "Rank", cell: (t) => rankCell(R, t.i, t.broke), sort: (t) => t.tabPlace, cls: "c" },
     { key: "team", label: "Team", cell: (t) => `${esc(R.teamsBasic[t.i].name)} ${catChips(R, t.i)}`, sort: (t) => R.teamsBasic[t.i].name.toLowerCase() },
     { key: "pts", label: "Pts", cell: (t) => t.pts, sort: (t) => t.pts, cls: "c", defaultDir: -1 },
-    { key: "exp", label: "Expected", title: "Where it would have finished without draw luck: points − (seat luck + room luck), re-ranked, speaks break ties. ▲/▼ = places higher/lower than the real finish; small numbers = 80% range from the model's uncertainty", cell: (t) => adjCell(t.tabPlace, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
+    { key: "exp", label: "Expected", title: "Where it would have finished without draw luck: points − (seat luck + room luck), re-ranked (teams level on points keep their real order unless the gap is closed). ▲/▼ = clear move (real finish outside the 80% range); ≈ = no clear change", cell: (t) => adjCell(t.exp?.real, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
     { key: "seat", label: "Seat", title: "Seat luck, team points", cell: (t) => `<span class="${luckShade(t.seatTot)}">${sgn(t.seatTot)}</span>`, sort: (t) => t.seatTot, cls: "c", defaultDir: -1 },
     { key: "room", label: "Room", title: "Room luck, team points", cell: (t) => `<span class="${luckShade(t.roomTot)}">${sgn(t.roomTot)}</span>`, sort: (t) => t.roomTot, cls: "c", defaultDir: -1 },
     { key: "total", label: "Total", cell: (t) => `<b class="${luckShade(t.total)}">${sgn(t.total)}${t.clear ? "*" : ""}</b>`, sort: (t) => t.total, cls: "c", defaultDir: -1 },
-    ...(full ? [] : [{ key: "range", label: "80% range", cell: (t) => `${sgn(t.totalCI[0], 1)} to ${sgn(t.totalCI[1], 1)}`, cls: "c muted" }]),
+    ...(full ? [] : [{ key: "range", label: "Luck range", title: "80% range of the total luck, in team points", cell: (t) => `${sgn(t.totalCI[0], 1)} to ${sgn(t.totalCI[1], 1)}`, cls: "c muted" }]),
     { key: "pb", label: "Break chance", title: "Share of re-runs (from team strengths) in which it breaks", cell: (t) => `<span class="pbc ${pbShade(t.pBreak)}">${pct(t.pBreak)}</span>`, sort: (t) => t.pBreak, cls: "c", defaultDir: -1 },
     { key: "pbn", label: "Without luck", title: "Break chance with all draw luck taken out: share of the model's plausible versions of everyone's luck in which its points − luck land inside the break", cell: (t) => (t.exp ? `<span class="pbc ${pbShade(t.exp.pBreak)}">${pct(t.exp.pBreak)}</span>` : "—"), sort: (t) => t.exp?.pBreak ?? -1, cls: "c", defaultDir: -1 },
     { key: "cls", label: "Luck", cell: (t) => pill(t.cls), sort: (t) => t.total, cls: "c", defaultDir: -1 },
@@ -221,7 +224,7 @@ function drawTables(R, S, state, open) {
     ...A.map((_, r) => ({ key: "r" + r, label: R.rounds[r].abbr || `R${r + 1}`, cell: (t) => (t.seq[r] ? `<span class="seat ${seatShade(A[r][SEATN.indexOf(t.seq[r])])}" title="${num(A[r][SEATN.indexOf(t.seq[r])])}">${t.seq[r]}</span>` : "—"), cls: "c" })),
     { key: "score", label: "Score", cell: (t) => num(t.score, 3), sort: (t) => t.score, cls: "c", defaultDir: -1 },
     { key: "diff", label: "vs 1.5", cell: (t) => `<b class="${t.cls === "Lucky" ? "t-good" : t.cls === "Unlucky" ? "t-bad" : "t-mid"}">${sgn(t.diff, 3)}</b>`, sort: (t) => t.diff, cls: "c", defaultDir: -1 },
-    { key: "adj", label: "Expected", title: "Where it would have finished without seat luck: points − (score − 1.5) × rounds, re-ranked, speaks break ties (no model). Small numbers = 80% range from re-sampling each round's rooms. ▲/▼ = places higher/lower than the real finish", cell: (t) => adjCell(realPlace(R, t.i), t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
+    { key: "adj", label: "Expected", title: "Where it would have finished without seat luck: points − (score − 1.5) × rounds, re-ranked (teams level on points keep their real order unless the gap is closed) (no model). Small numbers = 80% range from re-sampling each round's rooms. ▲/▼ = clear move (real finish outside the range); ≈ = no clear change", cell: (t) => adjCell(t.exp?.real, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
     { key: "cls", label: "Draw", cell: (t) => pill(t.cls), sort: (t) => t.diff, cls: "c", defaultDir: -1 },
   ];
   const brk = el(slide("draw", "break", "BREAK ZONE", `Places 1–${bk}`, `<p class="sub">Seats shaded by that round's seat value · click a team for its full profile</p>`));
@@ -290,7 +293,7 @@ function roomTables(R, S, state, open) {
       cell: (t) => `<span class="cellbox ${roomShade(t.hardPct[r], thr)}" title="${sgn(t.hardPct[r], 1)}%">${Math.round(t.oppPlace[r])}${wide ? ` <i>vs ${Math.round(t.expPlace[r])}</i>` : ""}</span>`, cls: "c" })),
     { key: "pu", label: "PU", title: "Pull-ups", cell: (t) => t.pullups || "–", sort: (t) => t.pullups, cls: "c", defaultDir: -1 },
     { key: "avg", label: "Avg", cell: (t) => `<b class="${t.cls === "Hard" ? "t-bad" : t.cls === "Soft" ? "t-good" : "t-mid"}">${sgn(t.meanPct, 1)}%</b>`, sort: (t) => t.meanPct, cls: "c", defaultDir: -1 },
-    { key: "adj", label: "Expected", title: "Where it would have finished without room luck: points − the luck model's room luck, re-ranked, speaks break ties. Small numbers = 80% range from the model's uncertainty. ▲/▼ = places higher/lower than the real finish", cell: (t) => adjCell(t.place, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
+    { key: "adj", label: "Expected", title: "Where it would have finished without room luck: each 1% of the field harder than billed is worth about 0.02 points (rate fitted from the luck model), so points + rate × the difficulties above, re-ranked (teams level on points keep their real order unless the gap is closed). ▲/▼ = clear move (real finish outside the 80% range); ≈ = no clear change", cell: (t) => adjCell(t.exp?.real, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
     { key: "cls", label: "Path", cell: (t) => pill(t.cls), sort: (t) => t.meanPct, cls: "c", defaultDir: -1 },
   ];
   const brk = el(slide("room", "break", "BREAK ZONE", `Places 1–${bk}`, `<p class="sub">Cells: opponents' average place vs typical for that room, shaded by difficulty (red = stronger than billed) · click a team for its profile</p>`));
@@ -310,7 +313,7 @@ function roomTables(R, S, state, open) {
 export function billingText(R, r, v) {
   const ranks = new Set(R.room.billing.team.map((b) => (b && b[r] ? b[r].roomRank : null)).filter((x) => x != null));
   if (ranks.size === 1) return "all rooms tied";
-  return `${num(v, v % 1 ? 1 : 0)} of ${R.meta.nRooms[r]}`;
+  return v % 1 ? `${num(v, 1)} of ${R.meta.nRooms[r]} (tied)` : `${num(v, 0)} of ${R.meta.nRooms[r]}`;
 }
 const t0 = (R) => Array.from({ length: R.meta.rounds }, (_, r) => r);
 
@@ -347,11 +350,11 @@ export function renderReport(kind, R, state, { onThreshold, onDownloadPptx, onSh
 function downloadCSV(kind, R, S) {
   const name = (R.meta.name || "tab").replace(/[^\w]+/g, "_");
   let rows;
-  if (kind === "luck") rows = [["rank", "team", "points", "points_without_luck", "expected_place", "expected_range_10", "expected_range_90", "break_chance_without_luck", "fair_place", "seat_luck", "room_luck", "total_luck", "range_10", "range_90", "break_chance", "broke", "class"],
-    ...S.luckRows.map((t) => [t.rank, R.teamsBasic[t.i].name, t.pts, t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? "", t.exp ? t.exp.pBreak.toFixed(4) : "", t.modelPlace, t.seatTot.toFixed(3), t.roomTot.toFixed(3), t.total.toFixed(3), t.totalCI[0].toFixed(3), t.totalCI[1].toFixed(3), t.pBreak.toFixed(4), t.broke, t.cls])];
-  else if (kind === "draw") rows = [["rank", "team", ...R.rounds.map((r, k) => r.abbr || `R${k + 1}`), "rounds", "score", "vs_1.5", "class", "points_without_seat_luck", "expected_place", "expected_range_10", "expected_range_90"],
-    ...S.drawRows.map((t) => [t.rank, R.teamsBasic[t.i].name, ...t.seq.map((s) => s || ""), t.played, t.score.toFixed(4), t.diff.toFixed(4), t.cls, t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? ""])];
-  else rows = [["rank", "team", ...R.rounds.flatMap((r, k) => [`${r.abbr || "R" + (k + 1)}_opp_place`, `${r.abbr || "R" + (k + 1)}_typical`, `${r.abbr || "R" + (k + 1)}_difficulty_pct`]), "pullups", "mean_pct", "class", "points_without_room_luck", "expected_place", "expected_range_10", "expected_range_90"],
-    ...S.roomRows.map((t) => [t.rank, R.teamsBasic[t.i].name, ...t.oppPlace.flatMap((v, r) => [v.toFixed(2), t.expPlace[r].toFixed(2), t.hardPct[r].toFixed(2)]), t.pullups, t.meanPct.toFixed(3), t.cls, t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? ""])];
+  if (kind === "luck") rows = [["rank", "team", "points", "points_without_luck", "expected_place", "expected_range_10", "expected_range_90", "clear_move", "break_chance_without_luck", "fair_place", "seat_luck", "room_luck", "total_luck", "range_10", "range_90", "break_chance", "broke", "class"],
+    ...S.luckRows.map((t) => [t.rank, R.teamsBasic[t.i].name, t.pts, t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? "", t.exp ? t.exp.clear : "", t.exp ? t.exp.pBreak.toFixed(4) : "", t.modelPlace, t.seatTot.toFixed(3), t.roomTot.toFixed(3), t.total.toFixed(3), t.totalCI[0].toFixed(3), t.totalCI[1].toFixed(3), t.pBreak.toFixed(4), t.broke, t.cls])];
+  else if (kind === "draw") rows = [["rank", "team", ...R.rounds.map((r, k) => r.abbr || `R${k + 1}`), "rounds", "score", "vs_1.5", "class", "points_without_seat_luck", "expected_place", "expected_range_10", "expected_range_90", "clear_move"],
+    ...S.drawRows.map((t) => [t.rank, R.teamsBasic[t.i].name, ...t.seq.map((s) => s || ""), t.played, t.score.toFixed(4), t.diff.toFixed(4), t.cls, t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? "", t.exp ? t.exp.clear : ""])];
+  else rows = [["rank", "team", ...R.rounds.flatMap((r, k) => [`${r.abbr || "R" + (k + 1)}_opp_place`, `${r.abbr || "R" + (k + 1)}_typical`, `${r.abbr || "R" + (k + 1)}_difficulty_pct`]), "pullups", "mean_pct", "class", "room_luck_points", "points_without_room_luck", "expected_place", "expected_range_10", "expected_range_90", "clear_move"],
+    ...S.roomRows.map((t) => [t.rank, R.teamsBasic[t.i].name, ...t.oppPlace.flatMap((v, r) => [v.toFixed(2), t.expPlace[r].toFixed(2), t.hardPct[r].toFixed(2)]), t.pullups, t.meanPct.toFixed(3), t.cls, t.exp ? t.exp.luckPts.toFixed(3) : "", t.exp ? t.exp.adjPts.toFixed(3) : "", t.exp?.rank ?? "", t.exp?.range80[0] ?? "", t.exp?.range80[1] ?? "", t.exp ? t.exp.clear : ""])];
   downloadText(`${name}_${kind}.csv`, csv(rows));
 }

@@ -62,7 +62,7 @@ export function howHTML() {
       <li><b>Classify.</b> Lucky above +0.050, unlucky below −0.050, neutral in between (exactly ±0.050 counts as neutral). You can change the threshold on the report.</li>
     </ol>
     <p><b>Reading it:</b> "vs 1.5" × number of rounds is roughly the team points the seats were worth. +0.200 over five rounds is about one point.</p>
-    <p><b>Expected place:</b> take the seat luck out of every team's points (points − "vs 1.5" × rounds), then re-rank everyone on what's left, with speaks breaking ties. There's no model involved. ▲3 means the team would have finished three places higher without its seat luck; ▼ means lower. The small range under it comes from re-sampling each round's rooms 1,000 times, which shows how much the seat values themselves could wobble.</p>
+    <p><b>Expected place:</b> take the seat luck out of every team's points (points − "vs 1.5" × rounds), then re-rank everyone on what's left (ties handled as in the overall section below). There's no model involved. ▲3 means a clear move three places up without seat luck, ▼ down, ≈ no clear change. The small range under it comes from re-sampling each round's rooms 1,000 times, which shows how much the seat values themselves could wobble.</p>
     <p><a href="#/how/limits-draw">Limitations of the draw audit →</a></p>
   </section>
 
@@ -77,7 +77,7 @@ export function howHTML() {
     </ol>
     <p>Example: if your round 1 opponents finished, on average, 15th of 83 when an average room's opponents finish around 42nd, that round was (42 − 15) / 83 = +32.5% harder than billed.</p>
     <p><b>Pull-ups (PU)</b> count the rounds a team was placed in a room with a team on more points than itself.</p>
-    <p><b>Expected place:</b> a percentage of the field can't be taken off team points directly, so this uses the luck model's <i>room luck</i>, which measures the same thing (real opponents against a typical room at that billing) in team points. Every team's points minus its room luck, re-ranked, with speaks breaking ties. The small range re-ranks the model's 600 plausible versions of everyone's room luck.</p>
+    <p><b>Expected place:</b> uses the room audit's own numbers, so the ranking follows the percentages in the table. A percentage of the field can't be taken off team points directly, so it needs one conversion rate: across every team and round, the luck model values a room 1% of the field harder than billed at about 0.02 team points (0.0216 at Oxford IV 2026, 0.0207 at Cambridge IV 2026). Each team gets points + rate × (its difficulty, added up over the rounds), and everyone is re-ranked. The audit has no uncertainty of its own, so the 80% range borrows its width from the luck model's uncertainty about room luck.</p>
     <p><a href="#/how/limits-room">Limitations of the room audit →</a></p>
   </section>
 
@@ -99,7 +99,10 @@ export function howHTML() {
     <h3>Stage 3: re-run the tournament</h3>
     <p>The tournament is simulated 10,000 times with the fitted strengths: random round 1, power pairing afterwards (random within a points bracket, leftovers pulled up), balanced seats, and results drawn from the model. A team's <b>break chance</b> is the share of runs where it finishes inside the open break. This is about how settled the break was given each team's estimated strength.</p>
     <h3>Stage 4: expected place without luck</h3>
-    <p>Every team's points minus its total luck (seat + room), re-ranked, with speaks breaking ties. If every team's luck were zero this would give back the real tab exactly. The 80% range and the <b>break chance without luck</b> come from re-ranking the model's 600 plausible versions of everyone's luck. All three reports work the same way, each with its own luck: the draw audit uses seat luck only (no model), the room audit room luck only, and this report both.</p>
+    <p><b>Two versions of each.</b> The team profile shows six expected places: for each of the three reports, (1) <i>everyone's luck taken out</i>, which re-ranks the whole tab, so neighbours move too, and (2) <i>only its own luck taken out</i>, where every other team keeps its real result. The first is a proper ranking; the second always moves the way the team's own luck says. The tables show the first.</p>
+    <p><b>Ties.</b> Whole team points are coarse, and one points group can hold 20 teams split only by speaks. So each points group is spread over half a point either side, in real tab order: to pass a team on the same points you have to gain more than the gap between you. Without this, taking 0.01 points off a team would drop it below its entire points group.</p>
+    <p><b>Clear moves only.</b> In all three reports, an expected place gets a ▲ or ▼ only when the team's real finish falls outside its 80% range. Otherwise it shows ≈, "no clear change". A red ▲ means the team would have finished higher without its luck (the draw cost it places); a green ▼ means lower (the draw gained it places), matching the red Unlucky and green Lucky labels. In crowded points groups, teams often swap places over differences of a few hundredths of a point, which the data can't really tell apart.</p>
+    <p>Every team's points minus its total luck (seat + room), re-ranked. If every team's luck were zero this would give back the real tab exactly. The 80% range and the <b>break chance without luck</b> come from re-ranking the model's 600 plausible versions of everyone's luck. All three reports work the same way, each with its own luck: the draw audit uses seat luck only (no model), the room audit room luck only, and this report both.</p>
     <p>We also tried re-drawing the whole tournament with each team's real performances held fixed. It looked attractive, but comparing teams who never met had to lean on the model's strengths, which are pulled towards average, so it moved bottom teams up and top teams down by about a point whatever their luck. We dropped it.</p>
     <h3>Checking the model</h3>
     <p>For every round, the model is re-fitted without that round and asked to predict it. On Oxford and Cambridge IV 2026 it called 66–68% of head-to-heads correctly, against 51–52% for simply backing the team with more points, because power pairing puts teams on equal points in the same room. Each report shows this check for the tournament you analysed.</p>
@@ -133,7 +136,7 @@ export function howHTML() {
       <li><b>Averages hide room make-up.</b> One very strong team plus two weak ones averages the same as three middling teams, but the first room is easier to come second in. The luck model handles this; the room audit doesn't.</li>
       <li>"Typical" for later rounds is a straight-line fit from top room to bottom room, which is an approximation.</li>
       <li>It measures who you were drawn against, not how the debate went.</li>
-      <li><b>The expected-place column needs a model.</b> Judging what a typical room would have done needs some estimate of how strong teams are, which can only come from their other rounds, so it uses the luck model's room luck and inherits its assumptions (see below).</li>
+      <li><b>The expected-place column borrows two things from the luck model:</b> the conversion rate from % of the field to team points (one number per tournament, about 0.02), and the width of its range. The ordering itself comes from the audit's own percentages. The model's room luck and the audit disagree on direction for a few teams (6 of 74 at Oxford, 8 of 51 at Cambridge among those labelled hard or soft), because the model also looks at how strong each opponent was rather than just their average.</li>
     </ul>
 
     <h3 id="how-limits-luck">Luck model</h3>

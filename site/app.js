@@ -49,6 +49,7 @@ function setPage(node, { keepScroll = false } = {}) {
     const href = a.getAttribute("href");
     const on = href === "#/" ? (hh === "#/" || hh === "#" || hh === "#/run")
       : href === "#/how" ? hh.startsWith("#/how") && !hh.startsWith("#/how/limits")
+      : href.startsWith("#/report") ? hh.startsWith("#/report")
       : hh.startsWith(href);
     a.classList.toggle("on", on);
   });

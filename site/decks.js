@@ -109,22 +109,22 @@ function luckDeck(pres, R, state) {
   // break zone
   let s = pres.addSlide({ masterName: "Table" });
   kicker(s, `${R.meta.name} · break zone`, false); title(s, `Places 1–${bk}`, false);
-  sub(s, `Luck in team points over ${R_} rounds (+ = the draw gave points) · Exp. = expected place without draw luck (▲/▼ vs real finish) · * = 80% range excludes 0`); legend(s, ["Lucky", "Neutral", "Unlucky"]);
+  sub(s, `Luck in team points over ${R_} rounds (+ = the draw gave points) · Exp. = expected place without draw luck (▲/▼ clear move, ≈ no clear change) · * = 80% range excludes 0`); legend(s, ["Lucky", "Neutral", "Unlucky"]);
   const wide = (t, k, fs) => {
     const b = base(k, fs), tone = TONE[CT[t.cls]];
     return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, 34), options: { ...b } },
-      { text: String(t.pts), options: { ...b, align: "center" } }, { text: expTxt(t.tabPlace, t.exp), options: { ...b, align: "center" } },
+      { text: String(t.pts), options: { ...b, align: "center" } }, { text: expTxt(t.exp?.real, t.exp), options: { ...b, align: "center" } },
       { text: sgn(t.seatTot), options: { ...b, align: "center", color: lk(t.seatTot) } }, { text: sgn(t.roomTot), options: { ...b, align: "center", color: lk(t.roomTot) } },
       { text: sgn(t.total) + (t.clear ? "*" : ""), options: { ...b, align: "center", bold: true, color: tone.ink } },
       { text: `${sgn(t.totalCI[0], 1)} to ${sgn(t.totalCI[1], 1)}`, options: { ...b, align: "center" } },
       { text: pct(t.pBreak), options: { ...b, align: "center", fill: { color: pbFill(t.pBreak) } } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }];
   };
-  s.addTable([["Rank", "Team", "Pts", "Exp.", "Seat", "Room", "Total", "80% range", "P(break)", "Luck"].map((t, k) => H(t, k, 12)), ...luckRows.slice(0, bk).map((t, k) => wide(t, k, 12))],
+  s.addTable([["Rank", "Team", "Pts", "Exp.", "Seat", "Room", "Total", "Luck 80%", "P(break)", "Luck"].map((t, k) => H(t, k, 12)), ...luckRows.slice(0, bk).map((t, k) => wide(t, k, 12))],
     { x: 0.5, y: 1.65, w: 12.33, colW: [0.65, 2.45, 0.6, 1.0, 1.0, 1.0, 1.1, 1.6, 1.2, 1.73], rowH: Math.min(0.28, 5.2 / (bk + 1)), border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT, autoPage: false });
   denseSlides(pres, luckRows.slice(bk), {
     kick: `${R.meta.name} · places ${bk + 1}+`, note: "Gold rank = broke · Exp. = expected place without draw luck · P(br) = break chance in re-runs", legendNames: ["Lucky", "Neutral", "Unlucky"],
     head: ["Rank", "Team", "Pts", "Exp.", "Seat", "Room", "Total", "P(br)", "Luck"], colW: [0.45, 1.6, 0.37, 0.65, 0.5, 0.5, 0.6, 0.6, 0.76],
-    rowFn: (t, k, fs) => { const b = base(k, fs), tone = TONE[CT[t.cls]]; return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, 24), options: b }, { text: String(t.pts), options: { ...b, align: "center" } }, { text: expTxt(t.tabPlace, t.exp), options: { ...b, align: "center" } }, { text: sgn(t.seatTot), options: { ...b, align: "center", color: lk(t.seatTot) } }, { text: sgn(t.roomTot), options: { ...b, align: "center", color: lk(t.roomTot) } }, { text: sgn(t.total) + (t.clear ? "*" : ""), options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: pct(t.pBreak), options: { ...b, align: "center", fill: { color: pbFill(t.pBreak) } } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; },
+    rowFn: (t, k, fs) => { const b = base(k, fs), tone = TONE[CT[t.cls]]; return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, 24), options: b }, { text: String(t.pts), options: { ...b, align: "center" } }, { text: expTxt(t.exp?.real, t.exp), options: { ...b, align: "center" } }, { text: sgn(t.seatTot), options: { ...b, align: "center", color: lk(t.seatTot) } }, { text: sgn(t.roomTot), options: { ...b, align: "center", color: lk(t.roomTot) } }, { text: sgn(t.total) + (t.clear ? "*" : ""), options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: pct(t.pBreak), options: { ...b, align: "center", fill: { color: pbFill(t.pBreak) } } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; },
   });
   // break line chart
   s = pres.addSlide({ masterName: "Table" });
@@ -171,14 +171,14 @@ function drawDeck(pres, R, state) {
   s.addTable([["Round", ...SEATN].map((t, k) => H(t, k, 12, [0])), ...A.map((r, k) => [{ text: R.rounds[k].name, options: { bold: true, fontFace: FONT, fontSize: 12 } }, ...r.map((v) => ({ text: v == null ? "—" : v.toFixed(2), options: { align: "center", fill: { color: seatFill(v) }, fontFace: FONT, fontSize: 12 } }))])],
     { x: 0.5, y: 1.7, w: 5.5, colW: [1.5, 1, 1, 1, 1], rowH: 0.36, border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT });
   const seatCols = (t, k, fs) => t.seq.map((sq, r) => (sq ? { text: sq, options: { ...base(k, fs), align: "center", fill: { color: seatFill(A[r][SEATN.indexOf(sq)]) } } } : { text: "—", options: { ...base(k, fs), align: "center", color: MUTED } }));
-  const rowFn = (t, k, fs, nm = 24) => { const b = base(k, fs), tone = TONE[CT[t.cls]] || TONE.mid; return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, nm) + (t.played < R_ ? " *" : ""), options: b }, ...seatCols(t, k, fs), { text: t.score.toFixed(3), options: { ...b, align: "center" } }, { text: sgn(t.diff, 3), options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: expTxt(realOf(R, t.i), t.exp), options: { ...b, align: "center" } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; };
+  const rowFn = (t, k, fs, nm = 24) => { const b = base(k, fs), tone = TONE[CT[t.cls]] || TONE.mid; return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, nm) + (t.played < R_ ? " *" : ""), options: b }, ...seatCols(t, k, fs), { text: t.score.toFixed(3), options: { ...b, align: "center" } }, { text: sgn(t.diff, 3), options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: expTxt(t.exp?.real, t.exp), options: { ...b, align: "center" } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; };
   s = pres.addSlide({ masterName: "Table" });
   kicker(s, `${R.meta.name} · break zone`, false); title(s, `Places 1–${bk}`, false); sub(s, "Seats shaded by that round's seat value"); legend(s, ["Lucky", "Neutral", "Unlucky"]);
   const rw = 0.8 * Math.min(1, 5 / R_);
   s.addTable([["Rank", "Team", ...A.map((_, r) => R.rounds[r].abbr || `R${r + 1}`), "Score", "vs 1.5", "Exp.", "Draw"].map((t, k) => H(t, k, 12)), ...top.map((t, k) => rowFn(t, k, 12, 40))],
     { x: 0.5, y: 1.65, w: 12.33, colW: [0.7, 12.33 - 0.7 - rw * R_ - 4.5, ...A.map(() => rw), 1.1, 1.1, 0.9, 1.4], rowH: Math.min(0.28, 5.2 / (bk + 1)), border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT, autoPage: false });
   const sw = 0.42 * Math.min(1, 5 / R_);
-  denseSlides(pres, drawRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: "* = missed rounds, averaged over rounds debated · Exp. = expected place without seat luck · gold rank = broke", legendNames: ["Lucky", "Neutral", "Unlucky"],
+  denseSlides(pres, drawRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: "* = missed rounds, averaged over rounds debated · Exp. = expected place without seat luck (≈ = no clear change) · gold rank = broke", legendNames: ["Lucky", "Neutral", "Unlucky"],
     head: ["Rank", "Team", ...A.map((_, r) => R.rounds[r].abbr || `R${r + 1}`), "Score", "vs 1.5", "Exp.", "Draw"], colW: [0.45, 6.0 - 0.45 - sw * R_ - 2.6, ...A.map(() => sw), 0.6, 0.6, 0.65, 0.75], rowFn });
   const full = drawRows.filter((t) => t.played === R_).sort((a, b) => b.diff - a.diff);
   readoutSlide(pres, "What stands out", [
@@ -200,14 +200,14 @@ function roomDeck(pres, R, state) {
   });
   const rowFn = (wideCells) => (t, k, fs, nm = 24) => { const b = base(k, fs), tone = TONE[CT[t.cls]]; return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, nm), options: b },
     ...t.oppPlace.map((v, r) => ({ text: wideCells ? `${Math.round(v)} vs ${Math.round(t.expPlace[r])}` : String(Math.round(v)), options: { ...b, align: "center", fill: { color: roomFill(t.hardPct[r], thr) } } })),
-    { text: t.pullups ? String(t.pullups) : "–", options: { ...b, align: "center" } }, { text: sgn(t.meanPct, 1) + "%", options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: expTxt(t.place, t.exp), options: { ...b, align: "center" } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; };
+    { text: t.pullups ? String(t.pullups) : "–", options: { ...b, align: "center" } }, { text: sgn(t.meanPct, 1) + "%", options: { ...b, align: "center", bold: true, color: tone.ink } }, { text: expTxt(t.exp?.real, t.exp), options: { ...b, align: "center" } }, { text: t.cls, options: { ...b, align: "center", bold: true, fill: { color: tone.fill }, color: tone.ink } }]; };
   const s = pres.addSlide({ masterName: "Table" });
   kicker(s, `${R.meta.name} · break zone`, false); title(s, `Places 1–${bk}`, false); sub(s, "Cells: opponents' average place vs typical for that room, shaded by difficulty (red = stronger than billed)"); legend(s, ["Soft", "Fair", "Hard"]);
   const rw = 1.05 * Math.min(1, 5 / R_);
   s.addTable([["Rank", "Team", ...t0(R_).map((r) => R.rounds[r].abbr || `R${r + 1}`), "PU", "Avg", "Exp.", "Path"].map((t, k) => H(t, k, 12)), ...top.map((t, k) => rowFn(true)(t, k, 12, 40))],
     { x: 0.5, y: 1.65, w: 12.33, colW: [0.7, 12.33 - 0.7 - rw * R_ - 4.08, ...t0(R_).map(() => rw), 0.7, 1.08, 0.9, 1.4], rowH: Math.min(0.28, 5.2 / (bk + 1)), border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT, autoPage: false });
   const sw = 0.42 * Math.min(1, 5 / R_);
-  denseSlides(pres, roomRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: `Cells: opponents' average place (1–${R.room.N}) on the round-removed table · PU = pull-ups · Exp. = expected place without room luck · gold rank = broke`, legendNames: ["Soft", "Fair", "Hard"],
+  denseSlides(pres, roomRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: `Cells: opponents' average place (1–${R.room.N}) on the round-removed table · PU = pull-ups · Exp. = expected place without room luck (≈ = no clear change) · gold rank = broke`, legendNames: ["Soft", "Fair", "Hard"],
     head: ["Rank", "Team", ...t0(R_).map((r) => R.rounds[r].abbr || `R${r + 1}`), "PU", "Avg", "Exp.", "Path"], colW: [0.48, 6.0 - 0.48 - sw * R_ - 2.25, ...t0(R_).map(() => sw), 0.35, 0.6, 0.65, 0.65], rowFn: rowFn(false) });
   const srt = roomRows.slice().sort((a, b) => b.meanPct - a.meanPct);
   readoutSlide(pres, "What stands out", [
@@ -220,7 +220,7 @@ function roomDeck(pres, R, state) {
 }
 const t0 = (n) => Array.from({ length: n }, (_, r) => r);
 // expected place with that analysis's luck removed, and the move from the real finish
-const expTxt = (real, exp) => { if (!exp) return "—"; const adj = exp.rank, d = (real || adj) - adj; return d > 0 ? `${adj} ▲${d}` : d < 0 ? `${adj} ▼${-d}` : `${adj} =`; };
+const expTxt = (real, exp) => { if (!exp) return "—"; if (!exp.clear) return `${exp.rank} ≈`; const adj = exp.rank, d = (real || adj) - adj; return d > 0 ? `${adj} ▲${d}` : d < 0 ? `${adj} ▼${-d}` : `${adj} =`; };
 const realOf = (R, i) => parseInt(R.teamsBasic[i].rank, 10) || null;
 
 export async function downloadDeck(kind, R, state) {

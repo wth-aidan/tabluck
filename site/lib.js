@@ -129,9 +129,9 @@ export const ordinal = (n) => { const v = Math.round(n), t = v % 100; return v +
 
 // Where a team finished across the re-runs: one bar per place, break-zone bars tinted,
 // the middle 80% shaded, and labelled markers for the break line, the real finish and the average re-run finish.
-export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPlace = null, range80 = null, width = 680, unit = "re-runs" } = {}) {
+export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPlace = null, ownPlace = null, range80 = null, width = 680, unit = "re-runs" } = {}) {
   const n = hist.length, share = hist.map((v) => v / runs), maxV = Math.max(...share, 1e-9);
-  const L = 44, Rm = 12, top = 66, ph = 150, height = top + ph + 46;
+  const L = 44, Rm = 12, top = 80, ph = 150, height = top + ph + 46;
   const bw = (width - L - Rm) / n;
   const xc = (place) => L + (place - 0.5) * bw;           // centre of a place's bar
   const xEdge = (k) => L + k * bw;                         // left edge of bar k (0-based)
@@ -152,14 +152,15 @@ export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPl
   const marks = [];
   if (breakSize && breakSize < n) marks.push({ x: xEdge(breakSize), cls: "pm-break", text: `Break line (top ${breakSize})` });
   if (realPlace) marks.push({ x: xc(realPlace), cls: "pm-real", text: `Real finish: ${ordinal(realPlace)}` });
-  if (expectedPlace != null) marks.push({ x: xc(expectedPlace), cls: "pm-mean", text: `Expected: ${ordinal(expectedPlace)}` });
-  const rows = [[], [], []], rowY = [16, 34, 52], cw = 6.4;
+  if (expectedPlace != null) marks.push({ x: xc(expectedPlace), cls: "pm-mean", text: `Everyone's luck out: ${ordinal(expectedPlace)}` });
+  if (ownPlace != null) marks.push({ x: xc(ownPlace), cls: "pm-own", text: `Own luck out: ${ordinal(ownPlace)}` });
+  const rows = [[], [], [], []], rowY = [14, 30, 46, 62], cw = 6.4;
   marks.sort((a, b) => a.x - b.x).forEach((m) => {
     const w = m.text.length * cw + 8;
     const anchor = m.x + w > width - Rm ? "end" : m.x - w < 0 ? "start" : (m.x > width / 2 ? "end" : "start");
     const x0 = anchor === "end" ? m.x - w : m.x, x1 = anchor === "end" ? m.x : m.x + w;
     let r = rows.findIndex((row) => row.every(([a, b]) => x1 < a - 4 || x0 > b + 4));
-    if (r < 0) r = 2;
+    if (r < 0) r = rows.length - 1;
     rows[r].push([x0, x1]); Object.assign(m, { r, anchor });
   });
   marks.forEach((m) => parts.push(`<line x1="${m.x}" x2="${m.x}" y1="${rowY[m.r] - 12}" y2="${top + ph}" class="${m.cls}"/>`));

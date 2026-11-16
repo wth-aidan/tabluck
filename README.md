@@ -6,6 +6,8 @@
 2. **Room audit**: were a team's opponents stronger or weaker than its room was billed as.
 3. **Overall luck**: a head-to-head model of seats and opponents together, in team points, plus 10,000 re-runs of the tournament for break chances.
 
+Every report also gives each team an **expected place**: its points with that report's luck taken out, re-ranked against the whole tab. It's shown two ways in each team's profile (everyone's luck taken out at once, and only that team's own luck), with an 80% range. Arrows (▲/▼) only appear when the real finish falls outside that range; otherwise it's ≈, no clear change.
+
 Each report is a stack of interactive slides (sortable, searchable tables, team profiles, adjustable thresholds), with downloads as PowerPoint and CSV. A "How it works" page explains every method, and a limitations section covers each analysis.
 
 > **Built with AI assistance.** The methods and code were developed with Claude (Anthropic) and checked against an independent Python implementation on Oxford IV 2026 and Cambridge IV 2026. Results are statistical estimates, not verdicts. Not affiliated with Tabbycat, calicotab or any tournament.
@@ -30,7 +32,7 @@ Browsers don't let one website read another, so a tiny Worker fetches the public
 site/            the website (plain HTML/CSS/JS, no build step)
   index.html  app.js  report.js  team.js  how.js  decks.js  lib.js  scrape.js  config.js  styles.css
   engine/        analysis: prep, seat (draw audit), room (room audit), model (luck), sim (re-runs), worker
-  data/          saved copies of two tournaments (work offline, no Worker needed)
+  data/          saved copies of two tournaments (open #/sample/0 or #/sample/1; no Worker needed)
   vendor/        PptxGenJS (MIT) for the slide downloads
 worker/          the Cloudflare Worker (tab fetcher) + optional wrangler.toml
 tests/           engine vs. Python results, Worker safety rules, browser tests
@@ -81,9 +83,9 @@ Every report has a **Share link** button. Links look like `https://tabluck.pages
 
 ```bash
 npm run serve        # then open http://localhost:8080
-npm test             # engine vs. Python results + Worker safety rules
+npm test             # engine vs. Python results, expected-place checks, Worker safety rules
 ```
-Locally (without a Worker address) the two **saved copies** on the home page still work.
+Without a Worker, the two saved copies still work: open `http://localhost:8080/#/sample/0` (Oxford IV 2026) or `#/sample/1` (Cambridge IV 2026).
 
 `tests/ui.mjs` and `tests/live_mock.mjs` are browser tests (Playwright + Chrome). The second puts a fake tab site behind a fake relay to exercise the whole paste-a-URL flow.
 
