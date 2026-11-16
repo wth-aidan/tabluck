@@ -38,7 +38,18 @@ function speakSpread(P, pool) {
   }
   return off;
 }
-// place if only this team's luck were removed and everyone else kept their real result
+// place if only this team's luck were removed and everyone else kept their real result (fast: binary search)
+const ownRanker = (P, pool, off) => {
+  const real = new Map(pool.map((t) => [t, P.totalPts[t] + off.get(t)]));
+  const desc = [...real.values()].sort((a, c) => c - a);
+  return (t, adjVal) => {
+    const mine = adjVal + off.get(t);
+    let lo = 0, hi = desc.length; // count of real scores strictly above mine
+    while (lo < hi) { const m = (lo + hi) >> 1; if (desc[m] > mine + 1e-12) lo = m + 1; else hi = m; }
+    return lo - (real.get(t) > mine + 1e-12 ? 1 : 0) + 1;
+  };
+};
+const q10q90 = (arr) => { const a = arr.slice().sort((x, y) => x - y); const at = (p) => a[Math.min(a.length - 1, Math.max(0, Math.ceil(p * a.length) - 1))]; return [at(0.1), at(0.9)]; };
 const ownRanks = (P, pool, off, adj) => {
   const real = new Map(pool.map((t) => [t, P.totalPts[t] + off.get(t)]));
   const sorted = [...real.values()].sort((a, c) => c - a);
@@ -60,6 +71,7 @@ export function drawExpected(P, seat, { boots = 1000, seed = 5 } = {}) {
   const own = ownRanks(P, pool, off, (t) => adjPts.get(t));
   const rand = rng(seed), R = P.R;
   const sumPlace = new Map(pool.map((t) => [t, 0])), hist = new Map(pool.map((t) => [t, new Uint32Array(pool.length + 1)]));
+  const ownOf = ownRanker(P, pool, off), ownS = new Map(pool.map((t) => [t, []]));
   for (let bt = 0; bt < boots; bt++) {
     const avg = P.rooms.map((rr, r) => {
       const s = [0, 0, 0, 0], c = [0, 0, 0, 0];
@@ -72,9 +84,9 @@ export function drawExpected(P, seat, { boots = 1000, seed = 5 } = {}) {
       return [t, P.totalPts[t] - luck];
     }));
     const pl = rankDesc(P, pool, (t) => adj.get(t) + off.get(t));
-    pool.forEach((t) => { const k = pl.get(t); sumPlace.set(t, sumPlace.get(t) + k); hist.get(t)[k]++; });
+    pool.forEach((t) => { const k = pl.get(t); sumPlace.set(t, sumPlace.get(t) + k); hist.get(t)[k]++; ownS.get(t).push(ownOf(t, adj.get(t))); });
   }
-  const rows = summarise(pool, sumPlace, hist, boots, (t) => ({ adjPts: adjPts.get(t), pointRank: point.get(t), ownRank: own.get(t), spread: off.get(t) }));
+  const rows = summarise(pool, sumPlace, hist, boots, (t) => ({ adjPts: adjPts.get(t), pointRank: point.get(t), ownRank: own.get(t), ownRange80: q10q90(ownS.get(t)), spread: off.get(t) }));
   // the headline expected place is the point estimate (no resampling); the bootstrap only supplies the range and chart
   rows.forEach((r) => { r.expRank = r.pointRank; });
   return { boots, pool: pool.length, teams: rows };
@@ -90,11 +102,13 @@ function rankWholeTab(P, analysed, adjPts, sampleAdj, nS, breakSize) {
   const point = rankDesc(P, pool, (t) => adj(t) + off.get(t));
   const own = ownRanks(P, pool, off, adj);
   const sumPlace = new Map(pool.map((t) => [t, 0])), hist = new Map(pool.map((t) => [t, new Uint32Array(pool.length + 1)])), brk = new Map(pool.map((t) => [t, 0]));
+  const ownOf = ownRanker(P, pool, off), ownS = new Map(pool.map((t) => [t, []]));
   for (let k = 0; k < nS; k++) {
-    const pl = rankDesc(P, pool, (t) => (adjPts.has(t) ? sampleAdj(t, k) : P.totalPts[t]) + off.get(t));
-    pool.forEach((t) => { const p = pl.get(t); sumPlace.set(t, sumPlace.get(t) + p); hist.get(t)[p]++; if (p <= breakSize) brk.set(t, brk.get(t) + 1); });
+    const sv = (t) => (adjPts.has(t) ? sampleAdj(t, k) : P.totalPts[t]);
+    const pl = rankDesc(P, pool, (t) => sv(t) + off.get(t));
+    pool.forEach((t) => { const p = pl.get(t); sumPlace.set(t, sumPlace.get(t) + p); hist.get(t)[p]++; if (p <= breakSize) brk.set(t, brk.get(t) + 1); if (adjPts.has(t)) ownS.get(t).push(ownOf(t, sv(t))); });
   }
-  const rows = summarise(pool, sumPlace, hist, nS, (t) => ({ adjPts: adj(t), pointRank: point.get(t), ownRank: own.get(t), spread: off.get(t), pBreak: brk.get(t) / nS, analysed: analysed.has(t) }));
+  const rows = summarise(pool, sumPlace, hist, nS, (t) => ({ adjPts: adj(t), pointRank: point.get(t), ownRank: own.get(t), ownRange80: ownS.get(t).length ? q10q90(ownS.get(t)) : null, spread: off.get(t), pBreak: brk.get(t) / nS, analysed: analysed.has(t) }));
   rows.forEach((r) => { r.expRank = r.pointRank; });
   return rows;
 }

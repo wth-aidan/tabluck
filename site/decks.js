@@ -109,7 +109,7 @@ function luckDeck(pres, R, state) {
   // break zone
   let s = pres.addSlide({ masterName: "Table" });
   kicker(s, `${R.meta.name} · break zone`, false); title(s, `Places 1–${bk}`, false);
-  sub(s, `Luck in team points over ${R_} rounds (+ = the draw gave points) · Exp. = expected place without draw luck (▲/▼ clear move, ≈ no clear change) · * = 80% range excludes 0`); legend(s, ["Lucky", "Neutral", "Unlucky"]);
+  sub(s, `Luck in team points over ${R_} rounds (+ = the draw gave points) · Exp. = expected place without draw luck (▲/▼ vs real finish, ≈ = within the 80% range) · * = 80% range excludes 0`); legend(s, ["Lucky", "Neutral", "Unlucky"]);
   const wide = (t, k, fs) => {
     const b = base(k, fs), tone = TONE[CT[t.cls]];
     return [{ text: t.rank, options: { ...b, align: "center", bold: true, fill: { color: t.broke ? "F6E7B8" : b.fill.color } } }, { text: short(R.teamsBasic[t.i].name, 34), options: { ...b } },
@@ -178,7 +178,7 @@ function drawDeck(pres, R, state) {
   s.addTable([["Rank", "Team", ...A.map((_, r) => R.rounds[r].abbr || `R${r + 1}`), "Score", "vs 1.5", "Exp.", "Draw"].map((t, k) => H(t, k, 12)), ...top.map((t, k) => rowFn(t, k, 12, 40))],
     { x: 0.5, y: 1.65, w: 12.33, colW: [0.7, 12.33 - 0.7 - rw * R_ - 4.5, ...A.map(() => rw), 1.1, 1.1, 0.9, 1.4], rowH: Math.min(0.28, 5.2 / (bk + 1)), border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT, autoPage: false });
   const sw = 0.42 * Math.min(1, 5 / R_);
-  denseSlides(pres, drawRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: "* = missed rounds, averaged over rounds debated · Exp. = expected place without seat luck (≈ = no clear change) · gold rank = broke", legendNames: ["Lucky", "Neutral", "Unlucky"],
+  denseSlides(pres, drawRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: "* = missed rounds, averaged over rounds debated · Exp. = expected place without seat luck (≈ = within the 80% range) · gold rank = broke", legendNames: ["Lucky", "Neutral", "Unlucky"],
     head: ["Rank", "Team", ...A.map((_, r) => R.rounds[r].abbr || `R${r + 1}`), "Score", "vs 1.5", "Exp.", "Draw"], colW: [0.45, 6.0 - 0.45 - sw * R_ - 2.6, ...A.map(() => sw), 0.6, 0.6, 0.65, 0.75], rowFn });
   const full = drawRows.filter((t) => t.played === R_).sort((a, b) => b.diff - a.diff);
   readoutSlide(pres, "What stands out", [
@@ -207,7 +207,7 @@ function roomDeck(pres, R, state) {
   s.addTable([["Rank", "Team", ...t0(R_).map((r) => R.rounds[r].abbr || `R${r + 1}`), "PU", "Avg", "Exp.", "Path"].map((t, k) => H(t, k, 12)), ...top.map((t, k) => rowFn(true)(t, k, 12, 40))],
     { x: 0.5, y: 1.65, w: 12.33, colW: [0.7, 12.33 - 0.7 - rw * R_ - 4.08, ...t0(R_).map(() => rw), 0.7, 1.08, 0.9, 1.4], rowH: Math.min(0.28, 5.2 / (bk + 1)), border: BORDER, margin: [0, 0.06, 0, 0.06], fontFace: FONT, autoPage: false });
   const sw = 0.42 * Math.min(1, 5 / R_);
-  denseSlides(pres, roomRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: `Cells: opponents' average place (1–${R.room.N}) on the round-removed table · PU = pull-ups · Exp. = expected place without room luck (≈ = no clear change) · gold rank = broke`, legendNames: ["Soft", "Fair", "Hard"],
+  denseSlides(pres, roomRows.slice(bk), { kick: `${R.meta.name} · places ${bk + 1}+`, note: `Cells: opponents' average place (1–${R.room.N}) on the round-removed table · PU = pull-ups · Exp. = expected place without room luck (≈ = within the 80% range) · gold rank = broke`, legendNames: ["Soft", "Fair", "Hard"],
     head: ["Rank", "Team", ...t0(R_).map((r) => R.rounds[r].abbr || `R${r + 1}`), "PU", "Avg", "Exp.", "Path"], colW: [0.48, 6.0 - 0.48 - sw * R_ - 2.25, ...t0(R_).map(() => sw), 0.35, 0.6, 0.65, 0.65], rowFn: rowFn(false) });
   const srt = roomRows.slice().sort((a, b) => b.meanPct - a.meanPct);
   readoutSlide(pres, "What stands out", [
@@ -220,7 +220,8 @@ function roomDeck(pres, R, state) {
 }
 const t0 = (n) => Array.from({ length: n }, (_, r) => r);
 // expected place with that analysis's luck removed, and the move from the real finish
-const expTxt = (real, exp) => { if (!exp) return "—"; if (!exp.clear) return `${exp.rank} ≈`; const adj = exp.rank, d = (real || adj) - adj; return d > 0 ? `${adj} ▲${d}` : d < 0 ? `${adj} ▼${-d}` : `${adj} =`; };
+const expTxt = (real, exp) => { if (!exp) return "—"; const adj = exp.rank, d = (real || adj) - adj, nc = exp.clear ? "" : " ≈";
+  if (!exp.clear) return d > 0 ? `${adj} ▲${d}${nc}` : d < 0 ? `${adj} ▼${-d}${nc}` : `${adj} =`; return d > 0 ? `${adj} ▲${d}` : d < 0 ? `${adj} ▼${-d}` : `${adj} =`; };
 const realOf = (R, i) => parseInt(R.teamsBasic[i].rank, 10) || null;
 
 export async function downloadDeck(kind, R, state) {

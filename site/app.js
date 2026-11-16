@@ -29,7 +29,7 @@ function route() {
   if (parts[0] === "about") { closeTeam(false); return setPage(el(aboutHTML())); }
   if (parts[0] === "report") {
     if (!state.result) { location.hash = "#/"; return; }
-    const kind = REPORTS[parts[1]] ? parts[1] : "draw";
+    const kind = REPORTS[parts[1]] ? parts[1] : "luck";
     showReport(kind);
     if (parts[2] === "team" && parts[3] != null) openTeam(kind, +parts[3]); else closeTeam(false);
     return;
@@ -58,7 +58,7 @@ function setPage(node, { keepScroll = false } = {}) {
 // ------------------------------------------------------------------ home
 function showHome(message = "") {
   closeTeam(false);
-  const prev = state.result ? `<div class="resume">Last analysis: <b>${esc(state.result.meta.name)}</b> · <a href="#/report/draw">open reports →</a></div>` : "";
+  const prev = state.result ? `<div class="resume">Last analysis: <b>${esc(state.result.meta.name)}</b> · <a href="#/report/luck">open reports →</a></div>` : "";
   const node = el(`<div class="home">
     <section class="hero">
       <div class="hero-in">
@@ -82,9 +82,9 @@ function showHome(message = "") {
       </div>
     </section>
     <section class="three">
-      <a class="three-card" href="#/how/draw"><span class="num">1</span><h3>Draw audit</h3><p>Were your seats good ones? Each seat in each round is valued by the points teams actually scored from it.</p><span class="more">How it works →</span></a>
-      <a class="three-card" href="#/how/room"><span class="num">2</span><h3>Room audit</h3><p>Were your opponents stronger or weaker than your room was meant to be, judged by where they finished?</p><span class="more">How it works →</span></a>
-      <a class="three-card" href="#/how/luck"><span class="num">3</span><h3>Overall luck</h3><p>Seats and opponents in one model, in team points, then the tournament re-run 10,000 times for break chances.</p><span class="more">How it works →</span></a>
+      <a class="three-card" href="#/how/luck"><span class="num">1</span><span class="tag">sees the most</span><h3>Overall luck</h3><p>Seats and opponents in one model, in team points, then the tournament re-run 10,000 times for break chances.</p><span class="more">How it works →</span></a>
+      <a class="three-card" href="#/how/draw"><span class="num">2</span><span class="tag">fewest assumptions</span><h3>Draw audit</h3><p>Were your seats good ones? Each seat in each round is valued by the points teams actually scored from it.</p><span class="more">How it works →</span></a>
+      <a class="three-card" href="#/how/room"><span class="num">3</span><span class="tag">in between</span><h3>Room audit</h3><p>Were your opponents stronger or weaker than your room was meant to be, judged by where they finished?</p><span class="more">How it works →</span></a>
     </section>
   </div>`);
   node.querySelector(".runform").addEventListener("submit", (e) => { e.preventDefault(); analyse(e.target.tab.value); });
@@ -208,7 +208,7 @@ async function analyse(input, { sample = null, breakSize = null } = {}) {
     state.result = result; state.ds = ds; state.input = sample ? "" : input; state.reportCache = {};
     try { sessionStorage.setItem("tabluck:last", JSON.stringify({ input: state.input, sample, ds, result })); } catch { /* storage full or blocked: fine */ }
     state.running = false;
-    location.hash = "#/report/draw";
+    location.hash = "#/report/luck";
   } catch (e) {
     state.running = false;
     prog.error(friendly(e));
@@ -276,10 +276,10 @@ document.getElementById("scrim").addEventListener("click", () => closeTeam(true)
   } catch { /* ignore */ }
   const q = new URLSearchParams(location.search).get("tab");
   if (q && (!state.result || state.input !== q)) {
-    const target = location.hash.startsWith("#/report/") ? location.hash : "#/report/draw";
+    const target = location.hash.startsWith("#/report/") ? location.hash : "#/report/luck";
     analyse(q).then(() => { if (state.result) location.hash = target.replace(/\/team\/\d+$/, ""); });
     return;
   }
-  if (location.hash.startsWith("#/run")) location.hash = state.result ? "#/report/draw" : "#/";
+  if (location.hash.startsWith("#/run")) location.hash = state.result ? "#/report/luck" : "#/";
   route();
 })();

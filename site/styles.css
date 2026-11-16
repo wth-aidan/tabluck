@@ -326,3 +326,23 @@ td.nowrap { white-space: nowrap; }
 .res1 { background: #CDEFD9; color: #17663A; } .res2 { background: #E7F4EC; color: #2E6B47; }
 .res3 { background: #FBEAE7; color: #8A3A30; } .res4 { background: #F9D6D1; color: #9B2C22; }
 .opp-brk { color: #A07A12; font-weight: 700; }
+/* how-sure scale on the overall report */
+.trust-scale { margin: 16px 0 18px; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); }
+.ts-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 13px; color: #C9D3E6; margin-bottom: 8px; }
+.ts-head > span:first-child { font-weight: 700; color: #fff; }
+.ts-axis { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; }
+.ts-axis i { display: inline-block; width: 90px; height: 6px; border-radius: 99px; background: linear-gradient(90deg, #7FD3A1, #E3B341); }
+.ts-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.ts-step { display: block; padding: 9px 11px; border-radius: 9px; background: rgba(255,255,255,.05); color: #C9D3E6; text-decoration: none; font-size: 13px; line-height: 1.4; border: 1px solid transparent; }
+a.ts-step:hover { border-color: rgba(255,255,255,.3); }
+.ts-step b { display: block; color: #fff; font-size: 14px; margin-bottom: 2px; }
+.ts-step.on { border-color: var(--gold); background: rgba(227,179,65,.1); }
+@media (max-width: 720px) { .ts-steps { grid-template-columns: 1fr; } }
+.three-card .tag { display: inline-block; margin-left: 8px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); vertical-align: 2px; }
+.trust-scale a.ts-step, .trust-scale a.ts-step span { color: #C9D3E6; text-decoration: none; }
+.trust-scale a.ts-step b { color: #fff; }
+.trust-scale a.ts-step:hover b { text-decoration: underline; }
+.ts-head { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.ts-step em { display: block; font-style: normal; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--gold); margin-bottom: 3px; }
+.trust-scale a.ts-step em { color: #9FB0CC; }
+.calc { display: block; font-size: 10.5px; color: var(--muted); line-height: 1.25; margin-top: 4px; white-space: nowrap; }

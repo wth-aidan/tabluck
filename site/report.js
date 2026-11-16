@@ -2,9 +2,9 @@
 import { esc, sgn, pct, num, classify, pill, seatShade, roomShade, luckShade, pbShade, dataTable, hbars, pairedColumns, el, csv, downloadText } from "./lib.js";
 
 export const REPORTS = {
+  luck: { label: "Overall luck", how: "luck", limits: "limits-luck" },
   draw: { label: "Draw audit", how: "draw", limits: "limits-draw" },
   room: { label: "Room audit", how: "room", limits: "limits-room" },
-  luck: { label: "Overall luck", how: "luck", limits: "limits-luck" },
 };
 
 const SEATN = ["OG", "OO", "CG", "CO"];
@@ -57,10 +57,22 @@ function adjCell(real, exp) {
   if (!exp) return "—";
   const adj = exp.rank, d = real == null ? 0 : real - adj;
   const ownT = exp.ownRank != null ? ` · only its own luck out: ${exp.ownRank}` : "";
-  if (!exp.clear) return `<b class="nc" title="Everyone's luck out${ownT}">${adj}</b> <span class="mv nc" title="No clear change: the real finish (${real}) is inside the 80% range${ownT}">≈</span><span class="rng" title="80% range">${exp.range80[0]}–${exp.range80[1]}</span>`;
-  if (exp.byOthers) return `<b class="nc">${adj}</b> <span class="mv nc" title="Moved by other teams' luck, not its own${ownT}">${d > 0 ? "▲" : "▼"}${Math.abs(d)}·</span><span class="rng">${exp.range80[0]}–${exp.range80[1]}</span>`;
-  const mv = d > 0 ? `<span class="mv mv-unl" title="${d} place${d === 1 ? "" : "s"} higher without luck: its luck cost it places">▲${d}</span>` : d < 0 ? `<span class="mv mv-lk" title="${-d} place${d === -1 ? "" : "s"} lower without luck: its luck gained it places">▼${-d}</span>` : `<span class="mv">=</span>`;
-  return `<b>${adj}</b> ${mv}<span class="rng" title="80% range">${exp.range80[0]}–${exp.range80[1]}</span>`;
+  const others = exp.byOthers;
+  const mv = d > 0 ? `<span class="mv ${others ? "nc" : "mv-unl"}" title="${d} place${d === 1 ? "" : "s"} higher without luck: ${others ? "moved by other teams' luck" : "its luck cost it places"}${ownT}">▲${d}</span>`
+    : d < 0 ? `<span class="mv ${others ? "nc" : "mv-lk"}" title="${-d} place${d === -1 ? "" : "s"} lower without luck: ${others ? "moved by other teams' luck" : "its luck gained it places"}${ownT}">▼${-d}</span>`
+    : `<span class="mv" title="Same place${ownT}">=</span>`;
+  return `<b>${adj}</b> ${mv}<span class="rng" title="${exp.clear ? "80% range" : "No clear change: the real finish is inside the 80% range"}">${exp.clear ? "" : "≈ "}${exp.range80[0]}–${exp.range80[1]}</span>`;
+}
+// the three reports side by side (same order as everywhere else), the current one outlined in gold
+const TRUST = [
+  ["luck", "Overall luck", "sees the most", "Seats and opponents together, adjusted for who sat where. Sees the most, but rests on the most assumptions."],
+  ["draw", "Draw audit", "fewest assumptions", "No model, just each round's seat averages. The hardest number to argue with, but it only looks at seats."],
+  ["room", "Room audit", "in between", "Adds who you faced, from the audit's own numbers plus one conversion rate from the model."],
+];
+function trustScale(kind) {
+  return `<div class="trust-scale" role="note"><div class="ts-head">How sure can you be?</div><div class="ts-steps">${TRUST.map(([k, name, tag, txt]) =>
+    k === kind ? `<div class="ts-step on"><b>${name}</b><em>${tag}</em><span>${txt}</span></div>`
+      : `<a href="#/report/${k}" class="ts-step"><b>${name}</b><em>${tag}</em><span>${txt}</span></a>`).join("")}</div></div>`;
 }
 const counts = (rows, classes) => classes.map((c) => rows.filter((r) => r.cls === c).length);
 const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
@@ -81,6 +93,7 @@ function luckReport(R, S, state, rerender) {
 
   out.push(slide("luck", "title", R.meta.name, "How much of the tab was luck?", `
     <p class="sub">One model for seats and opponents together, then ${R.sim.runs.toLocaleString()} re-runs of the tournament.</p>
+    ${trustScale("luck")}
     <div class="stats">
       <div class="stat"><b>${pct(V.model.acc)}</b><span>head-to-heads called right on rounds the model never saw</span><small>backing the team on more points: ${pct(V.points.acc)}</small></div>
       <div class="stat"><b>${sum.overlapReal.toFixed(1)}<i> / ${bk}</i></b><span>of the ${bk} strongest teams break in a typical re-run</span><small>with every seat made neutral: ${sum.overlapNeutral.toFixed(1)}</small></div>
@@ -148,7 +161,7 @@ function luckTables(R, S, state, open) {
     { key: "rank", label: "Rank", cell: (t) => rankCell(R, t.i, t.broke), sort: (t) => t.tabPlace, cls: "c" },
     { key: "team", label: "Team", cell: (t) => `${esc(R.teamsBasic[t.i].name)} ${catChips(R, t.i)}`, sort: (t) => R.teamsBasic[t.i].name.toLowerCase() },
     { key: "pts", label: "Pts", cell: (t) => t.pts, sort: (t) => t.pts, cls: "c", defaultDir: -1 },
-    { key: "exp", label: "Expected", title: "Where it would have finished without draw luck: points − (seat luck + room luck), re-ranked (teams level on points keep their real order unless the gap is closed). ▲/▼ = clear move (real finish outside the 80% range); ≈ = no clear change", cell: (t) => adjCell(t.exp?.real, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
+    { key: "exp", label: "Expected", title: "Where it would have finished without draw luck: points − (seat luck + room luck), re-ranked (teams level on points keep their real order unless the gap is closed). Red ▲ = its luck cost it places, green ▼ = its luck gained it places; ≈ before the range = real finish inside the 80% range, no clear change", cell: (t) => adjCell(t.exp?.real, t.exp), sort: (t) => t.exp?.rank ?? 1e9, cls: "c nowrap" },
     { key: "seat", label: "Seat", title: "Seat luck, team points", cell: (t) => `<span class="${luckShade(t.seatTot)}">${sgn(t.seatTot)}</span>`, sort: (t) => t.seatTot, cls: "c", defaultDir: -1 },
     { key: "room", label: "Room", title: "Room luck, team points", cell: (t) => `<span class="${luckShade(t.roomTot)}">${sgn(t.roomTot)}</span>`, sort: (t) => t.roomTot, cls: "c", defaultDir: -1 },
     { key: "total", label: "Total", cell: (t) => `<b class="${luckShade(t.total)}">${sgn(t.total)}${t.clear ? "*" : ""}</b>`, sort: (t) => t.total, cls: "c", defaultDir: -1 },
@@ -184,6 +197,7 @@ function drawReport(R, S, state) {
   const out = [];
   out.push(slide("draw", "title", R.meta.name, "Who got the draw?", `
     <p class="sub">A seat-by-seat audit of every team, using each round's motion-tab seat values.</p>
+    ${trustScale("draw")}
     <div class="stats">
       <div class="stat"><b>${drawRows.length}</b><span>teams with at least one round</span><small>${R.meta.rounds} preliminary rounds</small></div>
       <div class="stat"><b>${l} · ${n} · ${u}</b><span>lucky · neutral · unlucky in places 1–${bk}</span><small>mean vs 1.5: ${sgn(mean(top.map((t) => t.diff)), 3)}</small></div>
@@ -250,6 +264,7 @@ function roomReport(R, S, state) {
   const out = [];
   out.push(slide("room", "title", R.meta.name, "Who got the hard rooms?", `
     <p class="sub">How strong each team's opponents turned out to be, against what its room was supposed to hold.</p>
+    ${trustScale("room")}
     <div class="stats">
       <div class="stat"><b>${roomRows.length}</b><span>teams analysed</span><small>teams that debated every round</small></div>
       <div class="stat"><b>${s_} · ${f_} · ${h_}</b><span>soft · fair · hard in places 1–${bk}</span><small>mean ${sgn(mean(top.map((t) => t.meanPct)), 1)}% of field</small></div>

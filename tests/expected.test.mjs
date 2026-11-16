@@ -31,6 +31,8 @@ for (const k of ["oxf", "cam"]) {
   // clear-move flags
   for (const [name, rows, realOf] of [["draw", D, (t) => parseInt(T[t.i].rank, 10)], ["room", Rm, (t) => t.exp.real], ["overall", O, (t) => t.exp.real]]) {
     ok(rows.every((t) => t.exp.clear === (realOf(t) < t.exp.range80[0] || realOf(t) > t.exp.range80[1])), `${name}: "clear move" flag = real place outside the 80% range (${rows.filter((t) => t.exp.clear).length} clear)`);
+    ok(rows.every((t) => !t.exp.ownRange80 || (t.exp.ownRank >= t.exp.ownRange80[0] - 1 && t.exp.ownRank <= t.exp.ownRange80[1] + 1)), `${name}: own-luck place sits inside (or next to) its own 80% range`);
+    ok(rows.every((t) => !t.exp.ownRange80 || t.exp.ownClear === (realOf(t) < t.exp.ownRange80[0] || realOf(t) > t.exp.ownRange80[1])), `${name}: own-luck "clear" flag = real place outside its range (${rows.filter((t) => t.exp.ownClear).length} clear)`);
   }
   // room: clear moves go the way the room audit label says
   const rc = Rm.filter((t) => t.exp.clear && t.cls !== "Fair"), rcGood = rc.filter((t) => (t.cls === "Hard" ? t.exp.rank < t.exp.real : t.exp.rank > t.exp.real)).length;

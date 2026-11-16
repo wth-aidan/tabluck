@@ -28,7 +28,8 @@ export function runAll(ds, { runs = 10000, nSamples = 600, onProgress = () => {}
   const oExp = luckExpected(P, model, { breakSize: P.breakSize });
   // real = the team's real place within the same pool; clear = the real place falls outside the 80% range
   // byOthers: a clear move that its own luck alone wouldn't produce (it moves only because others' luck came out)
-  const pack = (e, real) => ({ rank: e.expRank, ownRank: e.ownRank, range80: e.range80, hist: e.placeHist, meanPlace: e.meanPlace, adjPts: e.adjPts, real,
+  const pack = (e, real) => ({ rank: e.expRank, ownRank: e.ownRank, ownRange80: e.ownRange80,
+    ownClear: real != null && !!e.ownRange80 && (real < e.ownRange80[0] || real > e.ownRange80[1]), range80: e.range80, hist: e.placeHist, meanPlace: e.meanPlace, adjPts: e.adjPts, real,
     clear: real != null && (real < e.range80[0] || real > e.range80[1]),
     byOthers: real != null && (real < e.range80[0] || real > e.range80[1]) && (e.ownRank === real || Math.sign(real - e.ownRank) !== Math.sign(real - e.expRank)), ...(e.pBreak != null ? { pBreak: e.pBreak } : {}), ...(e.luckPts != null ? { luckPts: e.luckPts } : {}) });
   const dBy = new Map(dExp.teams.map((e) => [e.i, e])), rBy = new Map(rExp.teams.map((e) => [e.i, e])), oBy = new Map(oExp.teams.map((e) => [e.i, e]));
