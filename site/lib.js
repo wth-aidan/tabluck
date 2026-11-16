@@ -129,7 +129,7 @@ export const ordinal = (n) => { const v = Math.round(n), t = v % 100; return v +
 
 // Where a team finished across the re-runs: one bar per place, break-zone bars tinted,
 // the middle 80% shaded, and labelled markers for the break line, the real finish and the average re-run finish.
-export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPlace = null, range80 = null, width = 680 } = {}) {
+export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPlace = null, range80 = null, width = 680, unit = "re-runs" } = {}) {
   const n = hist.length, share = hist.map((v) => v / runs), maxV = Math.max(...share, 1e-9);
   const L = 44, Rm = 12, top = 66, ph = 150, height = top + ph + 46;
   const bw = (width - L - Rm) / n;
@@ -141,18 +141,18 @@ export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPl
   // y grid
   [0, 0.5, 1].forEach((f) => { const v = yMax * f, yy = y(v); parts.push(`<line x1="${L}" x2="${width - Rm}" y1="${yy}" y2="${yy}" class="grid"/><text x="${L - 6}" y="${yy + 4}" class="tick" text-anchor="end">${pctTxt(v)}</text>`); });
   // middle-80% band
-  if (range80) parts.push(`<rect x="${xEdge(range80[0] - 1)}" y="${top}" width="${(range80[1] - range80[0] + 1) * bw}" height="${ph}" class="band80"><title>Middle 80% of re-runs: ${ordinal(range80[0])} to ${ordinal(range80[1])}</title></rect>`);
+  if (range80) parts.push(`<rect x="${xEdge(range80[0] - 1)}" y="${top}" width="${(range80[1] - range80[0] + 1) * bw}" height="${ph}" class="band80"><title>Middle 80% of ${unit}: ${ordinal(range80[0])} to ${ordinal(range80[1])}</title></rect>`);
   // bars
   share.forEach((v, k) => {
     const place = k + 1, h = Math.max(v > 0 ? 1 : 0, (v / yMax) * ph);
     const c = place === realPlace ? "pc-real" : place <= breakSize ? "pc-in" : "pc-out";
-    parts.push(`<rect x="${xEdge(k) + (bw > 3 ? 0.5 : 0)}" y="${top + ph - h}" width="${Math.max(0.6, bw - (bw > 3 ? 1 : 0))}" height="${h}" class="${c}"><title>${ordinal(place)}: ${pctTxt(v)} of re-runs</title></rect>`);
+    parts.push(`<rect x="${xEdge(k) + (bw > 3 ? 0.5 : 0)}" y="${top + ph - h}" width="${Math.max(0.6, bw - (bw > 3 ? 1 : 0))}" height="${h}" class="${c}"><title>${ordinal(place)}: ${pctTxt(v)} of ${unit}</title></rect>`);
   });
   // markers + labels (labels stacked in rows above the plot so they never overlap)
   const marks = [];
   if (breakSize && breakSize < n) marks.push({ x: xEdge(breakSize), cls: "pm-break", text: `Break line (top ${breakSize})` });
   if (realPlace) marks.push({ x: xc(realPlace), cls: "pm-real", text: `Real finish: ${ordinal(realPlace)}` });
-  if (expectedPlace != null) marks.push({ x: xc(expectedPlace), cls: "pm-mean", text: `Expected finish: ${ordinal(expectedPlace)}` });
+  if (expectedPlace != null) marks.push({ x: xc(expectedPlace), cls: "pm-mean", text: `Expected: ${ordinal(expectedPlace)}` });
   const rows = [[], [], []], rowY = [16, 34, 52], cw = 6.4;
   marks.sort((a, b) => a.x - b.x).forEach((m) => {
     const w = m.text.length * cw + 8;
@@ -163,7 +163,7 @@ export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPl
     rows[r].push([x0, x1]); Object.assign(m, { r, anchor });
   });
   marks.forEach((m) => parts.push(`<line x1="${m.x}" x2="${m.x}" y1="${rowY[m.r] - 12}" y2="${top + ph}" class="${m.cls}"/>`));
-  parts.push(`<text x="4" y="${top - 6}" class="tick axis-t">share of re-runs</text>`);
+  parts.push(`<text x="4" y="${top - 6}" class="tick axis-t">share of ${unit}</text>`);
   marks.forEach((m) => parts.push(`<text x="${m.x + (m.anchor === "end" ? -5 : 5)}" y="${rowY[m.r]}" text-anchor="${m.anchor}" class="pm-label ${m.cls}-t">${esc(m.text)}</text>`));
   // x axis ticks
   const step = niceStep(n / 8), ticks = new Set([1, n]);
@@ -172,7 +172,7 @@ export function placeChart(hist, { runs, breakSize, realPlace = null, expectedPl
     if (idx > 0 && xc(p) - xc(arr[idx - 1]) < 22 && p !== n) return;
     parts.push(`<text x="${xc(p)}" y="${top + ph + 16}" class="tick" text-anchor="middle">${p}</text>`);
   });
-  parts.push(`<text x="${L + (width - L - Rm) / 2}" y="${top + ph + 36}" class="tick axis-t" text-anchor="middle">Finishing place in a re-run (1 = top of the tab)</text>`);
+  parts.push(`<text x="${L + (width - L - Rm) / 2}" y="${top + ph + 36}" class="tick axis-t" text-anchor="middle">Finishing place (1 = top of the tab)</text>`);
   return `<svg class="chart placechart" viewBox="0 0 ${width} ${height}" role="img" aria-label="Finishing places across re-runs">${parts.join("")}</svg>`;
 }
 function niceUp(v) { const e = 10 ** Math.floor(Math.log10(v)), m = v / e; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * e; }

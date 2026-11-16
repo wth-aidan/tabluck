@@ -4,6 +4,7 @@ import { seatAudit } from "./seat.js";
 import { roomAudit, billing } from "./room.js";
 import { luckModel, holdout } from "./model.js";
 import { simulate } from "./sim.js";
+import { drawExpected, luckExpected } from "./expected.js";
 import { pearson, pstdev, mean } from "./util.js";
 
 export function runAll(ds, { runs = 10000, nSamples = 600, onProgress = () => {} } = {}) {
@@ -20,6 +21,17 @@ export function runAll(ds, { runs = 10000, nSamples = 600, onProgress = () => {}
   const model = luckModel(P, bill, { nSamples, onProgress });
   const validation = holdout(P, model.loo);
   const sim = simulate(P, model.full, { runs, breakSize: P.breakSize, onProgress });
+
+  // expected places, each from its own analysis only (see expected.js): points − that analysis's luck, re-ranked
+  const dExp = drawExpected(P, seat);
+  const rExp = luckExpected(P, model, "room", { breakSize: P.breakSize });
+  const oExp = luckExpected(P, model, "overall", { breakSize: P.breakSize });
+  const pack = (e) => ({ rank: e.expRank, range80: e.range80, hist: e.placeHist, meanPlace: e.meanPlace, adjPts: e.adjPts, ...(e.pBreak != null ? { pBreak: e.pBreak } : {}) });
+  const dBy = new Map(dExp.teams.map((e) => [e.i, e])), rBy = new Map(rExp.teams.map((e) => [e.i, e])), oBy = new Map(oExp.teams.map((e) => [e.i, e]));
+  seat.teams.forEach((t) => { if (dBy.has(t.i)) t.exp = pack(dBy.get(t.i)); });
+  room.teams.forEach((t) => { if (rBy.has(t.i)) t.exp = pack(rBy.get(t.i)); });
+  model.teams.forEach((t) => { if (oBy.has(t.i)) t.exp = pack(oBy.get(t.i)); });
+  const expMeta = { drawBoots: dExp.boots, drawPool: dExp.pool, luckSamples: oExp.samples, luckPool: oExp.teams.length };
 
   // light summaries used by the readouts
   const lt = model.teams;
@@ -43,7 +55,7 @@ export function runAll(ds, { runs = 10000, nSamples = 600, onProgress = () => {}
   return {
     meta: { name: ds.name, rounds: P.R, breakSize: P.breakSize, nTeams: P.n,
       nComplete: P.complete.filter(Boolean).length, nRooms: P.rooms.map((r) => r.length),
-      speaksAvailable: P.speaksAvailable, warnings: P.warnings, seconds: (Date.now() - t0) / 1000, source: ds.source || "", nSamples },
+      speaksAvailable: P.speaksAvailable, warnings: P.warnings, seconds: (Date.now() - t0) / 1000, source: ds.source || "", nSamples, expected: expMeta },
     teamsBasic: P.T.map((t, i) => ({ i, id: t.id, name: t.name, longName: t.longName || t.name, cats: t.cats || [], rank: t.rank,
       results: t.results, complete: P.complete[i], pts: P.totalPts[i], seat: P.seat[i], roomOf: P.roomOf[i],
       spk: P.spk[i], spkTotal: t.spkTotal })),

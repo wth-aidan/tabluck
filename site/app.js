@@ -35,6 +35,7 @@ function route() {
     return;
   }
   if (parts[0] === "run") return; // progress view is driven by analyse()
+  if (parts[0] === "sample" && EXAMPLES[+parts[1]]) { const ex = EXAMPLES[+parts[1]]; return analyse(ex.url, { sample: ex.sample }); } // saved copy, for tests and offline use
   showHome();
 }
 window.addEventListener("hashchange", route);
@@ -68,14 +69,14 @@ function showHome(message = "") {
           <span class="hero-warn-links"><a href="#/about">Why this exists</a> · <a href="#/how/ai">How AI was used</a> · <a href="#/how/limits">Limitations</a></span>
         </div>
         <form class="runform" autocomplete="off">
-          <input name="tab" type="text" inputmode="url" placeholder="e.g. oxfordiv26.calicotab.com" aria-label="Tab site address" value="${esc(state.input)}">
+          <input name="tab" type="text" inputmode="url" placeholder="e.g. ${DEMO ? "oxfordiv26.calicotab.com" : "eudc2026.calicotab.com"}" aria-label="Tab site address" value="${esc(state.input)}">
           <button class="btn big" type="submit">Analyse</button>
         </form>
         ${message ? `<div class="err">${esc(message)}</div>` : ""}
         <div class="examples">Try: ${EXAMPLES.map((e, k) => `<button class="link-btn" data-ex="${k}">${esc(e.label)}</button>`).join(" · ")}
-          ${DEMO ? "" : `<span class="muted"> · saved copies that work offline: <button class="link-btn" data-sample="0">Oxford</button>, <button class="link-btn" data-sample="1">Cambridge</button></span>`}</div>
-        ${DEMO ? `<div class="demo-note"><b>Demo version.</b> Only Oxford IV 2026 and Cambridge IV 2026 are built in, from saved copies of their tabs. Type either address (any spacing or capitals) or click above. Other addresses are checked and rejected the way the live site would, but nothing is fetched.</div>` : ""}
-        ${relayReady ? "" : `<div class="err soft">The tab fetcher isn't set up yet, so live tabs won't load. The saved copies still work.</div>`}
+</div>
+        ${DEMO ? `<div class="demo-note"><b>Demo version.</b> Only Oxford IV 2026 and Cambridge IV 2026 are built in, from saved copies of their tabs. Type either address (any spacing or capitals) or pick one above, then press Analyse. Other addresses are checked and rejected the way the live site would, but nothing is fetched.</div>` : ""}
+        ${relayReady ? "" : `<div class="err soft">The tab fetcher isn't set up yet, so live tabs won't load.</div>`}
         ${prev}
       </div>
     </section>
@@ -86,8 +87,12 @@ function showHome(message = "") {
     </section>
   </div>`);
   node.querySelector(".runform").addEventListener("submit", (e) => { e.preventDefault(); analyse(e.target.tab.value); });
-  node.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", () => analyse(EXAMPLES[+b.dataset.ex].url)));
-  node.querySelectorAll("[data-sample]").forEach((b) => b.addEventListener("click", () => analyse(EXAMPLES[+b.dataset.sample].url, { sample: EXAMPLES[+b.dataset.sample].sample })));
+  // examples fill the box; the visitor still presses Analyse
+  const box = node.querySelector(".runform input");
+  const fill = (v) => { box.value = v; box.focus(); box.setSelectionRange(v.length, v.length); };
+  node.querySelectorAll("[data-ex]").forEach((b) => b.addEventListener("click", () => fill(EXAMPLES[+b.dataset.ex].url)));
+  // clicking an empty box drops in the example address
+  box.addEventListener("focus", () => { if (!box.value.trim()) fill(box.placeholder.replace(/^e\.g\.\s*/, "")); });
   setPage(node);
 }
 
@@ -185,7 +190,7 @@ async function analyse(input, { sample = null, breakSize = null } = {}) {
       ds = await (await fetch(sample)).json();
       ds.fetchWarnings = ["This is a saved copy of the tab, not a live read."];
     } else {
-      if (!relayReady) throw new Error("The tab fetcher isn't set up on this site yet (see the README). Try a saved copy instead.");
+      if (!relayReady) throw new Error("The tab fetcher isn't set up on this site yet (see the README).");
       const relay = makeRelay(RELAY_URL);
       ds = await fetchTournament(input, relay, { onStep: (s) => prog.set("fetch", s), choose: (list) => prog.choose(list) });
     }
@@ -248,6 +253,10 @@ function openTeam(kind, i) {
   drawer.classList.add("open"); document.body.classList.add("drawer-open");
   drawer.scrollTop = 0;
   drawer.querySelector(".tp-close")?.addEventListener("click", () => (location.hash = `#/report/${kind}`));
+  drawer.querySelectorAll("[data-ptab]").forEach((btn) => btn.addEventListener("click", () => {
+    drawer.querySelectorAll("[data-ptab]").forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on); });
+    drawer.querySelectorAll("[data-pview]").forEach((p) => { p.hidden = p.dataset.pview !== btn.dataset.ptab; });
+  }));
   drawer.querySelector(".tp-close")?.focus();
 }
 function closeTeam(updateHash = true) {

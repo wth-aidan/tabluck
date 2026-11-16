@@ -214,7 +214,7 @@ export function luckModel(P, bill, { nSamples = 600, seed = 7, onProgress = () =
       totalCI: [percentile(totS.get(t), 10), percentile(totS.get(t), 90)],
     };
   });
-  return { full, loo, teams, seatBonus: full.b };
+  return { full, loo, teams, seatBonus: full.b, samples: { seat: seatS, room: roomS, total: totS } };
 }
 
 // Out-of-sample check: predict each round's head-to-heads from fits that never saw that round.
