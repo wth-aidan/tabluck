@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TabLuck · How much of the tab was luck?</title>
+  <meta name="description" content="Paste a British Parliamentary Tabbycat tab and see how much of the results came down to seats, rooms and the draw. AI-assisted statistical estimates.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141B34'/%3E%3Cpath d='M9 22l5-12 4 8 3-5 3 9' stroke='%23E3B341' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/"><span class="logo" aria-hidden="true"></span>TabLuck</a>
+    <nav class="topnav" aria-label="Main">
+      <a href="#/">Analyse</a>
+      <a href="#/report/draw" class="needs-result">Reports</a>
+      <a href="#/how">How it works</a>
+      <a href="#/how/limits">Limitations</a>
+      <a href="#/about">About</a>
+    </nav>
+  </header>
+  <div class="aibar" role="note">AI-assisted statistical estimates, not verdicts. <a href="#/how/ai">About the AI assistance</a> · <a href="#/how/limits">Limitations</a></div>
+  <main id="app" tabindex="-1"></main>
+  <div id="scrim" aria-hidden="true"></div>
+  <aside id="drawer" aria-label="Team profile" tabindex="-1"></aside>
+  <footer class="foot">
+    <span>Built with AI assistance (Claude by Anthropic). Not affiliated with Tabbycat, calicotab or any tournament. Uses only public tab data.</span>
+    <span><a href="#/about">About</a> · <a href="#/how">How it works</a> · <a href="#/how/limits">Limitations</a></span>
+  </footer>
+  <noscript><p style="padding:2rem">This site needs JavaScript to run the analysis in your browser.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

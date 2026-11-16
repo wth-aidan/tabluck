@@ -1,0 +1,11 @@
+{
+  "name": "tabluck",
+  "private": true,
+  "type": "module",
+  "description": "How much of a British Parliamentary tab was luck? Draw audit, room audit and a luck model, in the browser.",
+  "scripts": {
+    "test": "node tests/worker.test.mjs && node tests/compare.mjs",
+    "serve": "python3 -m http.server 8080 --directory site"
+  },
+  "license": "MIT"
+}

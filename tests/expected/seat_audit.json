@@ -1,0 +1,3831 @@
+{
+ "cam": [
+  {
+   "rank": "1",
+   "team": "Oxford LM",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.468,
+   "diff": -0.032,
+   "cls": "Neutral",
+   "pts": "15"
+  },
+  {
+   "rank": "2",
+   "team": "$",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.45,
+   "diff": -0.05,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "3",
+   "team": "Oxford D",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.64,
+   "diff": 0.14,
+   "cls": "Lucky",
+   "pts": "12"
+  },
+  {
+   "rank": "4",
+   "team": "LSE B",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.458,
+   "diff": -0.042,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "5",
+   "team": "ULaw A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.478,
+   "diff": -0.022,
+   "cls": "Neutral",
+   "pts": "11"
+  },
+  {
+   "rank": "6",
+   "team": "LSE A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.516,
+   "diff": 0.016,
+   "cls": "Neutral",
+   "pts": "11"
+  },
+  {
+   "rank": "7",
+   "team": "Belgrade TBA",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.754,
+   "diff": 0.254,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "8",
+   "team": "UNSW A, Bardsley & Pather",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.44,
+   "diff": -0.06,
+   "cls": "Unlucky",
+   "pts": "11"
+  },
+  {
+   "rank": "9",
+   "team": "Oxford E",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.724,
+   "diff": 0.224,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "10",
+   "team": "Oxford C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "11",
+   "team": "TCD Hist AG",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.572,
+   "diff": 0.072,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "12",
+   "team": "Oxford F",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.774,
+   "diff": 0.274,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "13",
+   "team": "McGill A(enocyon dirus)",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.202,
+   "diff": -0.298,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "14",
+   "team": "Hart House A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.278,
+   "diff": -0.222,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "15",
+   "team": "Oxford H",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.658,
+   "diff": 0.158,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "16",
+   "team": "Tartu A",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.648,
+   "diff": 0.148,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "17",
+   "team": "Zagreb I hope my crash doesn’t have uneven",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.536,
+   "diff": 0.036,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "18",
+   "team": "Munich A",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.696,
+   "diff": 0.196,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "19",
+   "team": "Malaya D",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.432,
+   "diff": -0.068,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "20",
+   "team": "Queen's A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.526,
+   "diff": 0.026,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "21",
+   "team": "Durham A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "22",
+   "team": "McGill B",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.638,
+   "diff": 0.138,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "23",
+   "team": "Oxford G",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "24",
+   "team": "UCL A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.526,
+   "diff": 0.026,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "25",
+   "team": "Durham JB",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.508,
+   "diff": 0.008,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "26",
+   "team": "en.wikipedia.org/wiki/St_Conleth's_",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.67,
+   "diff": 0.17,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "27",
+   "team": "Inner Temple A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.364,
+   "diff": -0.136,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "28",
+   "team": "KCL A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.44,
+   "diff": -0.06,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "29",
+   "team": "Malaya A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.344,
+   "diff": -0.156,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "30",
+   "team": "Racky and Penny from Temu",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.688,
+   "diff": 0.188,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "31",
+   "team": "where is turtucaia",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "32",
+   "team": "Oxford J",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.306,
+   "diff": -0.194,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "33",
+   "team": "Malaya C",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.392,
+   "diff": -0.108,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "34",
+   "team": "Stanford LB",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.536,
+   "diff": 0.036,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "35",
+   "team": "Edinburgh JFFW",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.43,
+   "diff": -0.07,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "36",
+   "team": "UCL C",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.648,
+   "diff": 0.148,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "37",
+   "team": "UCL B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.22,
+   "diff": -0.28,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "38",
+   "team": "Malaya B",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.41,
+   "diff": -0.09,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "39",
+   "team": "Malaya E",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.468,
+   "diff": -0.032,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "40",
+   "team": "Batman and Robin",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.582,
+   "diff": 0.082,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "41",
+   "team": "Good Beleno",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.496,
+   "diff": -0.004,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "42",
+   "team": "Stanford JS",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.592,
+   "diff": 0.092,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "43",
+   "team": "Oxford Hans and Chanidu",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.382,
+   "diff": -0.118,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "44",
+   "team": "Econ Challenge",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.536,
+   "diff": 0.036,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "45",
+   "team": "The most honorable Maša and the Bea",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.562,
+   "diff": 0.062,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "46",
+   "team": "Stockholm A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.562,
+   "diff": 0.062,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "47",
+   "team": "#insync",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.592,
+   "diff": 0.092,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "48",
+   "team": "Kumar Mc Laughlin",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.536,
+   "diff": 0.036,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "49",
+   "team": "Stanford LM",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.374,
+   "diff": -0.126,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "50",
+   "team": "Kafkian Khalos",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "51",
+   "team": "Arwaa and Rizwan",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.514,
+   "diff": 0.014,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "52",
+   "team": "LSE D",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.468,
+   "diff": -0.032,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "53",
+   "team": "Tartu B",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.62,
+   "diff": 0.12,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "54",
+   "team": "Edinburgh T",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.27,
+   "diff": -0.23,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "55",
+   "team": "PhD Destiny",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.296,
+   "diff": -0.204,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "56",
+   "team": "Cambridge S",
+   "cats": "Novice",
+   "seq": [
+    "—",
+    "—",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 3,
+   "score": 1.747,
+   "diff": 0.247,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "57",
+   "team": "Stanford ZW",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.526,
+   "diff": 0.026,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "58",
+   "team": "KCL C",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "59",
+   "team": "Imperial A",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.554,
+   "diff": 0.054,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "60",
+   "team": "Hal",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.458,
+   "diff": -0.042,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "61",
+   "team": "Malaya F",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.724,
+   "diff": 0.224,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "62",
+   "team": "Res Ipsa Talk Your Way Out",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.688,
+   "diff": 0.188,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "63",
+   "team": "TCD Phil B",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.602,
+   "diff": 0.102,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "64",
+   "team": "Law and Lore",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.516,
+   "diff": 0.016,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "65",
+   "team": "EDS C",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "66",
+   "team": "KCL B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.516,
+   "diff": 0.016,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "67",
+   "team": "Rupem Baraka",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.374,
+   "diff": -0.126,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "68",
+   "team": "Oxford I(dgaf)",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.306,
+   "diff": -0.194,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "69",
+   "team": "Claremont LF",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.496,
+   "diff": -0.004,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "70",
+   "team": "EDS B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.374,
+   "diff": -0.126,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "71",
+   "team": "UCD LawSoc A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.498,
+   "diff": -0.002,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "72",
+   "team": "Las Pulgas",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.468,
+   "diff": -0.032,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "73",
+   "team": "KK Dinamik",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.554,
+   "diff": 0.054,
+   "cls": "Lucky",
+   "pts": "5"
+  },
+  {
+   "rank": "74",
+   "team": "Imperial C",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.306,
+   "diff": -0.194,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "75",
+   "team": "LSE C",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.364,
+   "diff": -0.136,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "76",
+   "team": "Ill persons",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.22,
+   "diff": -0.28,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "77",
+   "team": "Stockholm B",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.27,
+   "diff": -0.23,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "78",
+   "team": "UCD LawSoc B - Emma + Irene",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.774,
+   "diff": 0.274,
+   "cls": "Lucky",
+   "pts": "4"
+  },
+  {
+   "rank": "79",
+   "team": "UCD LawSoc C",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.364,
+   "diff": -0.136,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "80",
+   "team": "EDS A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.468,
+   "diff": -0.032,
+   "cls": "Neutral",
+   "pts": "3"
+  },
+  {
+   "rank": "81",
+   "team": "Objectively correct",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.63,
+   "diff": 0.13,
+   "cls": "Lucky",
+   "pts": "3"
+  },
+  {
+   "rank": "82",
+   "team": "XJTLU",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.42,
+   "diff": -0.08,
+   "cls": "Unlucky",
+   "pts": "3"
+  },
+  {
+   "rank": "83",
+   "team": "History and Law Combo will destroy",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.364,
+   "diff": -0.136,
+   "cls": "Unlucky",
+   "pts": "2"
+  },
+  {
+   "rank": "84",
+   "team": "EDS D",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.504,
+   "diff": 0.004,
+   "cls": "Neutral",
+   "pts": "0"
+  },
+  {
+   "rank": "85",
+   "team": "Sciences Po A",
+   "cats": "Novice, ESL",
+   "seq": [
+    "OG",
+    "OO",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 2,
+   "score": 1.36,
+   "diff": -0.14,
+   "cls": "Unlucky",
+   "pts": "0"
+  }
+ ],
+ "oxf": [
+  {
+   "rank": "1",
+   "team": "Harvard A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.51,
+   "diff": 0.01,
+   "cls": "Neutral",
+   "pts": "15"
+  },
+  {
+   "rank": "2",
+   "team": "MDU B",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.416,
+   "diff": -0.084,
+   "cls": "Unlucky",
+   "pts": "13"
+  },
+  {
+   "rank": "3",
+   "team": "Cambridge A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.508,
+   "diff": 0.008,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "4",
+   "team": "Stanford A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.49,
+   "diff": -0.01,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "5",
+   "team": "LBS A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.478,
+   "diff": -0.022,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "6",
+   "team": "QDU A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.49,
+   "diff": -0.01,
+   "cls": "Neutral",
+   "pts": "12"
+  },
+  {
+   "rank": "7",
+   "team": "HHDC A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.594,
+   "diff": 0.094,
+   "cls": "Lucky",
+   "pts": "12"
+  },
+  {
+   "rank": "8",
+   "team": "Edinburgh Ξ",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.688,
+   "diff": 0.188,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "9",
+   "team": "ULaw A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.648,
+   "diff": 0.148,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "10",
+   "team": "LSE A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.474,
+   "diff": -0.026,
+   "cls": "Neutral",
+   "pts": "11"
+  },
+  {
+   "rank": "11",
+   "team": "EDS A",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.778,
+   "diff": 0.278,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "12",
+   "team": "KCL A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.442,
+   "diff": -0.058,
+   "cls": "Unlucky",
+   "pts": "11"
+  },
+  {
+   "rank": "13",
+   "team": "Harvard E",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.386,
+   "diff": -0.114,
+   "cls": "Unlucky",
+   "pts": "11"
+  },
+  {
+   "rank": "14",
+   "team": "Harvard D",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.366,
+   "diff": -0.134,
+   "cls": "Unlucky",
+   "pts": "11"
+  },
+  {
+   "rank": "15",
+   "team": "Edinburgh Δ",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.588,
+   "diff": 0.088,
+   "cls": "Lucky",
+   "pts": "11"
+  },
+  {
+   "rank": "16",
+   "team": "Ljubljana A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.534,
+   "diff": 0.034,
+   "cls": "Neutral",
+   "pts": "11"
+  },
+  {
+   "rank": "17",
+   "team": "Durham LH",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.62,
+   "diff": 0.12,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "18",
+   "team": "LSE B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.466,
+   "diff": -0.034,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "19",
+   "team": "Cambridge D",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.558,
+   "diff": 0.058,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "20",
+   "team": "GUU A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.676,
+   "diff": 0.176,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "21",
+   "team": "Durham KT",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "22",
+   "team": "Malaya C",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.516,
+   "diff": 0.016,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "23",
+   "team": "Belgrade B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.29,
+   "diff": -0.21,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "24",
+   "team": "Cambridge B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.49,
+   "diff": -0.01,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "25",
+   "team": "Inner Temple A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.45,
+   "diff": -0.05,
+   "cls": "Neutral",
+   "pts": "10"
+  },
+  {
+   "rank": "26",
+   "team": "NYUAD A",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.612,
+   "diff": 0.112,
+   "cls": "Lucky",
+   "pts": "10"
+  },
+  {
+   "rank": "27",
+   "team": "UDS A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.33,
+   "diff": -0.17,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "28",
+   "team": "Harvard C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.398,
+   "diff": -0.102,
+   "cls": "Unlucky",
+   "pts": "10"
+  },
+  {
+   "rank": "29",
+   "team": "TCD Phil A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.508,
+   "diff": 0.008,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "30",
+   "team": "StA TB",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.442,
+   "diff": -0.058,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "31",
+   "team": "MDU A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.704,
+   "diff": 0.204,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "32",
+   "team": "UChicago B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.466,
+   "diff": -0.034,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "33",
+   "team": "GUU B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.382,
+   "diff": -0.118,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "34",
+   "team": "StA A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.502,
+   "diff": 0.002,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "35",
+   "team": "Princeton A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "36",
+   "team": "LSE C",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.472,
+   "diff": -0.028,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "37",
+   "team": "Alaska B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.466,
+   "diff": -0.034,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "38",
+   "team": "MDU C",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.326,
+   "diff": -0.174,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "39",
+   "team": "Manchester B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.724,
+   "diff": 0.224,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "40",
+   "team": "Yale A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.42,
+   "diff": -0.08,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "41",
+   "team": "KCL B",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.62,
+   "diff": 0.12,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "42",
+   "team": "Ljubljana B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.534,
+   "diff": 0.034,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "43",
+   "team": "Liverpool B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.62,
+   "diff": 0.12,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "44",
+   "team": "Heidelberg A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.42,
+   "diff": -0.08,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "45",
+   "team": "Warwick A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.502,
+   "diff": 0.002,
+   "cls": "Neutral",
+   "pts": "9"
+  },
+  {
+   "rank": "46",
+   "team": "Bristol A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.328,
+   "diff": -0.172,
+   "cls": "Unlucky",
+   "pts": "9"
+  },
+  {
+   "rank": "47",
+   "team": "Princeton B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.688,
+   "diff": 0.188,
+   "cls": "Lucky",
+   "pts": "9"
+  },
+  {
+   "rank": "48",
+   "team": "Belgrade A",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.642,
+   "diff": 0.142,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "49",
+   "team": "Malaya A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.38,
+   "diff": -0.12,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "50",
+   "team": "UCL A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.576,
+   "diff": 0.076,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "51",
+   "team": "Stanford B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.552,
+   "diff": 0.052,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "52",
+   "team": "Malaya B",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.442,
+   "diff": -0.058,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "53",
+   "team": "HHDC C",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.544,
+   "diff": 0.044,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "54",
+   "team": "Stanford D",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "55",
+   "team": "TCD Hist A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.51,
+   "diff": 0.01,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "56",
+   "team": "Malaya E",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.53,
+   "diff": 0.03,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "57",
+   "team": "Cambridge C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "8"
+  },
+  {
+   "rank": "58",
+   "team": "HHDC B",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.642,
+   "diff": 0.142,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "59",
+   "team": "GMU A",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.64,
+   "diff": 0.14,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "60",
+   "team": "LSE D",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.382,
+   "diff": -0.118,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "61",
+   "team": "Tartu B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.326,
+   "diff": -0.174,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "62",
+   "team": "NYUAD C",
+   "cats": "ESL, Novice",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.558,
+   "diff": 0.058,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "63",
+   "team": "Manchester A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.644,
+   "diff": 0.144,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "64",
+   "team": "MBZUAI A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.37,
+   "diff": -0.13,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "65",
+   "team": "Imperial A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.302,
+   "diff": -0.198,
+   "cls": "Unlucky",
+   "pts": "8"
+  },
+  {
+   "rank": "66",
+   "team": "Alaska C",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.552,
+   "diff": 0.052,
+   "cls": "Lucky",
+   "pts": "8"
+  },
+  {
+   "rank": "67",
+   "team": "Tartu A",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.688,
+   "diff": 0.188,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "68",
+   "team": "Harvard F",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.452,
+   "diff": -0.048,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "69",
+   "team": "Brown A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.552,
+   "diff": 0.052,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "70",
+   "team": "Yale C",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.446,
+   "diff": -0.054,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "71",
+   "team": "Alaska A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.534,
+   "diff": 0.034,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "72",
+   "team": "IIUM A",
+   "cats": "ESL",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.422,
+   "diff": -0.078,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "73",
+   "team": "Bristol B",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.474,
+   "diff": -0.026,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "74",
+   "team": "Inner Temple B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.498,
+   "diff": -0.002,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "75",
+   "team": "UCL B",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.33,
+   "diff": -0.17,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "76",
+   "team": "UCL C",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CG",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.662,
+   "diff": 0.162,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "77",
+   "team": "Liverpool A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.53,
+   "diff": 0.03,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "78",
+   "team": "Colgate A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.564,
+   "diff": 0.064,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "79",
+   "team": "Cambridge F",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.668,
+   "diff": 0.168,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "80",
+   "team": "UCD LawSoc A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.668,
+   "diff": 0.168,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "81",
+   "team": "StA C",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.41,
+   "diff": -0.09,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "82",
+   "team": "Reading A",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.632,
+   "diff": 0.132,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "83",
+   "team": "Imperial B",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.588,
+   "diff": 0.088,
+   "cls": "Lucky",
+   "pts": "7"
+  },
+  {
+   "rank": "84",
+   "team": "Liverpool C",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.516,
+   "diff": 0.016,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "85",
+   "team": "Stanford E",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.454,
+   "diff": -0.046,
+   "cls": "Neutral",
+   "pts": "7"
+  },
+  {
+   "rank": "86",
+   "team": "Cambridge G",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.434,
+   "diff": -0.066,
+   "cls": "Unlucky",
+   "pts": "7"
+  },
+  {
+   "rank": "87",
+   "team": "Princeton C",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.64,
+   "diff": 0.14,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "88",
+   "team": "Princeton D",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "OG",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.452,
+   "diff": -0.048,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "89",
+   "team": "UChicago A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.416,
+   "diff": -0.084,
+   "cls": "Unlucky",
+   "pts": "6"
+  },
+  {
+   "rank": "90",
+   "team": "Malaya D",
+   "cats": "ESL",
+   "seq": [
+    "OG",
+    "OO",
+    "CO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.648,
+   "diff": 0.148,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "91",
+   "team": "NYUAD B",
+   "cats": "ESL, Novice",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.552,
+   "diff": 0.052,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "92",
+   "team": "NYUAD D",
+   "cats": "ESL, Novice",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "93",
+   "team": "Tartu C",
+   "cats": "ESL",
+   "seq": [
+    "CG",
+    "OO",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.632,
+   "diff": 0.132,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "94",
+   "team": "Bates A",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "95",
+   "team": "Cambridge E",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "CO",
+    "CG",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.42,
+   "diff": -0.08,
+   "cls": "Unlucky",
+   "pts": "6"
+  },
+  {
+   "rank": "96",
+   "team": "Budapest A",
+   "cats": "ESL, Novice",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "97",
+   "team": "Imperial C",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OG",
+    "OO",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.558,
+   "diff": 0.058,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "98",
+   "team": "Colgate C",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "OG",
+    "CO",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.62,
+   "diff": 0.12,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "99",
+   "team": "TCD Phil B",
+   "cats": "ESL, Novice",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.626,
+   "diff": 0.126,
+   "cls": "Lucky",
+   "pts": "6"
+  },
+  {
+   "rank": "100",
+   "team": "Budapest B",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.472,
+   "diff": -0.028,
+   "cls": "Neutral",
+   "pts": "6"
+  },
+  {
+   "rank": "101",
+   "team": "Edinburgh Φ",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.564,
+   "diff": 0.064,
+   "cls": "Lucky",
+   "pts": "5"
+  },
+  {
+   "rank": "102",
+   "team": "UCD L&H C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.422,
+   "diff": -0.078,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "103",
+   "team": "Middlebury D",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "5"
+  },
+  {
+   "rank": "104",
+   "team": "Yale B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "OO",
+    "OG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.594,
+   "diff": 0.094,
+   "cls": "Lucky",
+   "pts": "5"
+  },
+  {
+   "rank": "105",
+   "team": "Reading B",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.49,
+   "diff": -0.01,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "106",
+   "team": "TCD Hist F and S",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "CO",
+    "OG",
+    "CG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.478,
+   "diff": -0.022,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "107",
+   "team": "Stanford C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.266,
+   "diff": -0.234,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "108",
+   "team": "Colgate B",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.416,
+   "diff": -0.084,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "109",
+   "team": "Malaya F",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.168,
+   "diff": -0.332,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "110",
+   "team": "CCU A",
+   "cats": "",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.466,
+   "diff": -0.034,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "111",
+   "team": "RUN DS",
+   "cats": "",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "112",
+   "team": "Bates C",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OO",
+    "OG",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.676,
+   "diff": 0.176,
+   "cls": "Lucky",
+   "pts": "5"
+  },
+  {
+   "rank": "113",
+   "team": "Galway A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.358,
+   "diff": -0.142,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "114",
+   "team": "Bates B",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "OG",
+    "OO",
+    "CG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.416,
+   "diff": -0.084,
+   "cls": "Unlucky",
+   "pts": "5"
+  },
+  {
+   "rank": "115",
+   "team": "RUN PR",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OO",
+    "—"
+   ],
+   "played": 4,
+   "score": 1.525,
+   "diff": 0.025,
+   "cls": "Neutral",
+   "pts": "5"
+  },
+  {
+   "rank": "116",
+   "team": "TCD Phil l g&p",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "OO",
+    "CG",
+    "CO",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "4"
+  },
+  {
+   "rank": "117",
+   "team": "Brown B",
+   "cats": "",
+   "seq": [
+    "OO",
+    "OG",
+    "CO",
+    "CG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.454,
+   "diff": -0.046,
+   "cls": "Neutral",
+   "pts": "4"
+  },
+  {
+   "rank": "118",
+   "team": "CCU B",
+   "cats": "",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.552,
+   "diff": 0.052,
+   "cls": "Lucky",
+   "pts": "4"
+  },
+  {
+   "rank": "119",
+   "team": "DC Bonn A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.414,
+   "diff": -0.086,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "120",
+   "team": "Middlebury C",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.302,
+   "diff": -0.198,
+   "cls": "Unlucky",
+   "pts": "4"
+  },
+  {
+   "rank": "121",
+   "team": "Middlebury A",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "CO",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.46,
+   "diff": -0.04,
+   "cls": "Neutral",
+   "pts": "4"
+  },
+  {
+   "rank": "122",
+   "team": "Lincoln's Inn B",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.6,
+   "diff": 0.1,
+   "cls": "Lucky",
+   "pts": "4"
+  },
+  {
+   "rank": "123",
+   "team": "Budapest C",
+   "cats": "",
+   "seq": [
+    "OO",
+    "CG",
+    "OG",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.33,
+   "diff": -0.17,
+   "cls": "Unlucky",
+   "pts": "3"
+  },
+  {
+   "rank": "124",
+   "team": "Lincoln's Inn A",
+   "cats": "Novice",
+   "seq": [
+    "OG",
+    "CG",
+    "OO",
+    "CO",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.508,
+   "diff": 0.008,
+   "cls": "Neutral",
+   "pts": "3"
+  },
+  {
+   "rank": "125",
+   "team": "UCD C",
+   "cats": "Novice",
+   "seq": [
+    "OO",
+    "OG",
+    "CG",
+    "CO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.266,
+   "diff": -0.234,
+   "cls": "Unlucky",
+   "pts": "3"
+  },
+  {
+   "rank": "126",
+   "team": "UCD B",
+   "cats": "Novice",
+   "seq": [
+    "CG",
+    "CO",
+    "OG",
+    "OO",
+    "CG"
+   ],
+   "played": 5,
+   "score": 1.608,
+   "diff": 0.108,
+   "cls": "Lucky",
+   "pts": "3"
+  },
+  {
+   "rank": "127",
+   "team": "Swing 1.2",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "CO",
+    "CG",
+    "—"
+   ],
+   "played": 2,
+   "score": 1.545,
+   "diff": 0.045,
+   "cls": "Neutral",
+   "pts": "3"
+  },
+  {
+   "rank": "128",
+   "team": "Swing G",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "CG"
+   ],
+   "played": 1,
+   "score": 1.55,
+   "diff": 0.05,
+   "cls": "Neutral",
+   "pts": "3"
+  },
+  {
+   "rank": "129",
+   "team": "Swing 2.3",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "CG"
+   ],
+   "played": 1,
+   "score": 1.55,
+   "diff": 0.05,
+   "cls": "Neutral",
+   "pts": "3"
+  },
+  {
+   "rank": "130",
+   "team": "UCD LawSoc C",
+   "cats": "Novice",
+   "seq": [
+    "CO",
+    "CG",
+    "OG",
+    "OO",
+    "OG"
+   ],
+   "played": 5,
+   "score": 1.502,
+   "diff": 0.002,
+   "cls": "Neutral",
+   "pts": "2"
+  },
+  {
+   "rank": "131",
+   "team": "Budapest D",
+   "cats": "",
+   "seq": [
+    "OG",
+    "CO",
+    "CG",
+    "OG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.42,
+   "diff": -0.08,
+   "cls": "Unlucky",
+   "pts": "2"
+  },
+  {
+   "rank": "132",
+   "team": "Middlebury B",
+   "cats": "ESL, Novice",
+   "seq": [
+    "CO",
+    "OO",
+    "CG",
+    "OG",
+    "CO"
+   ],
+   "played": 5,
+   "score": 1.394,
+   "diff": -0.106,
+   "cls": "Unlucky",
+   "pts": "2"
+  },
+  {
+   "rank": "133",
+   "team": "Swing 1",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 2,
+   "score": 1.56,
+   "diff": 0.06,
+   "cls": "Lucky",
+   "pts": "2"
+  },
+  {
+   "rank": "134",
+   "team": "Swing 2.2",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "OG",
+    "CG",
+    "—"
+   ],
+   "played": 2,
+   "score": 1.345,
+   "diff": -0.155,
+   "cls": "Unlucky",
+   "pts": "2"
+  },
+  {
+   "rank": "135",
+   "team": "Swing 1.3",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "CO"
+   ],
+   "played": 1,
+   "score": 1.45,
+   "diff": -0.05,
+   "cls": "Neutral",
+   "pts": "2"
+  },
+  {
+   "rank": "136",
+   "team": "UCD L&H Team A",
+   "cats": "ESL",
+   "seq": [
+    "CO",
+    "OG",
+    "CG",
+    "CG",
+    "OO"
+   ],
+   "played": 5,
+   "score": 1.168,
+   "diff": -0.332,
+   "cls": "Unlucky",
+   "pts": "0"
+  },
+  {
+   "rank": "137",
+   "team": "Swing 2",
+   "cats": "",
+   "seq": [
+    "CO",
+    "OO",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 2,
+   "score": 1.56,
+   "diff": 0.06,
+   "cls": "Lucky",
+   "pts": "0"
+  },
+  {
+   "rank": "138=",
+   "team": "Harvard B",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 0,
+   "score": null,
+   "diff": null,
+   "cls": "DNC",
+   "pts": "—"
+  },
+  {
+   "rank": "138=",
+   "team": "Bates D",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 0,
+   "score": null,
+   "diff": null,
+   "cls": "DNC",
+   "pts": "—"
+  },
+  {
+   "rank": "138=",
+   "team": "Siegen A",
+   "cats": "",
+   "seq": [
+    "—",
+    "—",
+    "—",
+    "—",
+    "—"
+   ],
+   "played": 0,
+   "score": null,
+   "diff": null,
+   "cls": "DNC",
+   "pts": "—"
+  }
+ ]
+}

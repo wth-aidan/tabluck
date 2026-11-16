@@ -1,0 +1,3702 @@
+{
+ "cam": {
+  "teams": [
+   {
+    "team": "Oxford LM",
+    "rank": "1",
+    "tab_place": 1,
+    "pts": 15,
+    "p_break": 0.9605,
+    "p_break_neutral": 0.9642,
+    "mean_pts": 13.2954,
+    "mean_place": 3.3541,
+    "place_80": [
+     1.0,
+     7.0
+    ],
+    "pts_pct": 0.8327,
+    "broke": true
+   },
+   {
+    "team": "$",
+    "rank": "2",
+    "tab_place": 2,
+    "pts": 12,
+    "p_break": 0.8369,
+    "p_break_neutral": 0.8417,
+    "mean_pts": 11.1185,
+    "mean_place": 9.2354,
+    "place_80": [
+     2.0,
+     21.0
+    ],
+    "pts_pct": 0.6993,
+    "broke": true
+   },
+   {
+    "team": "Oxford D",
+    "rank": "3",
+    "tab_place": 3,
+    "pts": 12,
+    "p_break": 0.8234,
+    "p_break_neutral": 0.8253,
+    "mean_pts": 11.0812,
+    "mean_place": 9.6084,
+    "place_80": [
+     2.0,
+     22.0
+    ],
+    "pts_pct": 0.69935,
+    "broke": true
+   },
+   {
+    "team": "LSE B",
+    "rank": "4",
+    "tab_place": 4,
+    "pts": 12,
+    "p_break": 0.8448,
+    "p_break_neutral": 0.8511,
+    "mean_pts": 11.1332,
+    "mean_place": 9.0485,
+    "place_80": [
+     2.0,
+     21.0
+    ],
+    "pts_pct": 0.69885,
+    "broke": true
+   },
+   {
+    "team": "ULaw A",
+    "rank": "5",
+    "tab_place": 5,
+    "pts": 11,
+    "p_break": 0.7361,
+    "p_break_neutral": 0.7474,
+    "mean_pts": 10.5693,
+    "mean_place": 12.4601,
+    "place_80": [
+     2.0,
+     29.0
+    ],
+    "pts_pct": 0.5881000000000001,
+    "broke": true
+   },
+   {
+    "team": "LSE A",
+    "rank": "6",
+    "tab_place": 6,
+    "pts": 11,
+    "p_break": 0.619,
+    "p_break_neutral": 0.6289,
+    "mean_pts": 10.0593,
+    "mean_place": 16.1651,
+    "place_80": [
+     3.0,
+     34.0
+    ],
+    "pts_pct": 0.7105,
+    "broke": true
+   },
+   {
+    "team": "Belgrade TBA",
+    "rank": "7",
+    "tab_place": 7,
+    "pts": 11,
+    "p_break": 0.4223,
+    "p_break_neutral": 0.4196,
+    "mean_pts": 9.3209,
+    "mean_place": 22.5992,
+    "place_80": [
+     6.0,
+     44.0
+    ],
+    "pts_pct": 0.83665,
+    "broke": true
+   },
+   {
+    "team": "UNSW A, Bardsley & Pather",
+    "rank": "8",
+    "tab_place": 8,
+    "pts": 11,
+    "p_break": 0.5133,
+    "p_break_neutral": 0.518,
+    "mean_pts": 9.6655,
+    "mean_place": 19.3744,
+    "place_80": [
+     5.0,
+     39.0
+    ],
+    "pts_pct": 0.7844,
+    "broke": true
+   },
+   {
+    "team": "Oxford E",
+    "rank": "9",
+    "tab_place": 9,
+    "pts": 11,
+    "p_break": 0.464,
+    "p_break_neutral": 0.4671,
+    "mean_pts": 9.4813,
+    "mean_place": 21.244,
+    "place_80": [
+     5.0,
+     44.0
+    ],
+    "pts_pct": 0.80435,
+    "broke": true
+   },
+   {
+    "team": "Oxford C",
+    "rank": "10",
+    "tab_place": 10,
+    "pts": 11,
+    "p_break": 0.5251,
+    "p_break_neutral": 0.5306,
+    "mean_pts": 9.7218,
+    "mean_place": 18.961,
+    "place_80": [
+     4.0,
+     38.0
+    ],
+    "pts_pct": 0.774,
+    "broke": true
+   },
+   {
+    "team": "TCD Hist AG",
+    "rank": "11",
+    "tab_place": 11,
+    "pts": 10,
+    "p_break": 0.47,
+    "p_break_neutral": 0.4764,
+    "mean_pts": 9.5004,
+    "mean_place": 20.8158,
+    "place_80": [
+     5.0,
+     43.0
+    ],
+    "pts_pct": 0.6077,
+    "broke": true
+   },
+   {
+    "team": "Oxford F",
+    "rank": "12",
+    "tab_place": 12,
+    "pts": 10,
+    "p_break": 0.3909,
+    "p_break_neutral": 0.3882,
+    "mean_pts": 9.2088,
+    "mean_place": 23.576,
+    "place_80": [
+     6.0,
+     45.0
+    ],
+    "pts_pct": 0.67255,
+    "broke": true
+   },
+   {
+    "team": "McGill A(enocyon dirus)",
+    "rank": "13",
+    "tab_place": 13,
+    "pts": 10,
+    "p_break": 0.5536,
+    "p_break_neutral": 0.5632,
+    "mean_pts": 9.8205,
+    "mean_place": 18.0417,
+    "place_80": [
+     4.0,
+     36.0
+    ],
+    "pts_pct": 0.533,
+    "broke": true
+   },
+   {
+    "team": "Hart House A",
+    "rank": "14",
+    "tab_place": 14,
+    "pts": 10,
+    "p_break": 0.5309,
+    "p_break_neutral": 0.5262,
+    "mean_pts": 9.7334,
+    "mean_place": 18.6316,
+    "place_80": [
+     4.0,
+     37.0
+    ],
+    "pts_pct": 0.5553,
+    "broke": true
+   },
+   {
+    "team": "Oxford H",
+    "rank": "15",
+    "tab_place": 15,
+    "pts": 10,
+    "p_break": 0.469,
+    "p_break_neutral": 0.4787,
+    "mean_pts": 9.4978,
+    "mean_place": 20.9707,
+    "place_80": [
+     5.0,
+     43.0
+    ],
+    "pts_pct": 0.6071,
+    "broke": true
+   },
+   {
+    "team": "Tartu A",
+    "rank": "16",
+    "tab_place": 16,
+    "pts": 10,
+    "p_break": 0.4627,
+    "p_break_neutral": 0.4735,
+    "mean_pts": 9.4704,
+    "mean_place": 21.295,
+    "place_80": [
+     5.0,
+     44.0
+    ],
+    "pts_pct": 0.6093500000000001,
+    "broke": true
+   },
+   {
+    "team": "Zagreb I hope my crash doesn’t have uneven",
+    "rank": "17",
+    "tab_place": 17,
+    "pts": 10,
+    "p_break": 0.2712,
+    "p_break_neutral": 0.2784,
+    "mean_pts": 8.6913,
+    "mean_place": 28.9918,
+    "place_80": [
+     8.0,
+     54.0
+    ],
+    "pts_pct": 0.76895,
+    "broke": false
+   },
+   {
+    "team": "Munich A",
+    "rank": "18",
+    "tab_place": 18,
+    "pts": 10,
+    "p_break": 0.3858,
+    "p_break_neutral": 0.3841,
+    "mean_pts": 9.1743,
+    "mean_place": 24.0653,
+    "place_80": [
+     6.0,
+     46.0
+    ],
+    "pts_pct": 0.67575,
+    "broke": false
+   },
+   {
+    "team": "Malaya D",
+    "rank": "19",
+    "tab_place": 19,
+    "pts": 10,
+    "p_break": 0.2479,
+    "p_break_neutral": 0.2454,
+    "mean_pts": 8.6006,
+    "mean_place": 29.9547,
+    "place_80": [
+     9.0,
+     54.0
+    ],
+    "pts_pct": 0.78655,
+    "broke": false
+   },
+   {
+    "team": "Queen's A",
+    "rank": "20",
+    "tab_place": 20,
+    "pts": 9,
+    "p_break": 0.478,
+    "p_break_neutral": 0.4748,
+    "mean_pts": 9.5291,
+    "mean_place": 20.5948,
+    "place_80": [
+     5.0,
+     43.0
+    ],
+    "pts_pct": 0.3687,
+    "broke": false
+   },
+   {
+    "team": "Durham A",
+    "rank": "21",
+    "tab_place": 21,
+    "pts": 9,
+    "p_break": 0.372,
+    "p_break_neutral": 0.3724,
+    "mean_pts": 9.1353,
+    "mean_place": 24.3134,
+    "place_80": [
+     7.0,
+     46.0
+    ],
+    "pts_pct": 0.46190000000000003,
+    "broke": false
+   },
+   {
+    "team": "McGill B",
+    "rank": "22",
+    "tab_place": 22,
+    "pts": 9,
+    "p_break": 0.2969,
+    "p_break_neutral": 0.2921,
+    "mean_pts": 8.8099,
+    "mean_place": 27.7881,
+    "place_80": [
+     8.0,
+     51.0
+    ],
+    "pts_pct": 0.5375000000000001,
+    "broke": false
+   },
+   {
+    "team": "Oxford G",
+    "rank": "23",
+    "tab_place": 23,
+    "pts": 9,
+    "p_break": 0.3386,
+    "p_break_neutral": 0.3481,
+    "mean_pts": 9.0193,
+    "mean_place": 25.6096,
+    "place_80": [
+     7.0,
+     48.0
+    ],
+    "pts_pct": 0.49019999999999997,
+    "broke": false
+   },
+   {
+    "team": "UCL A",
+    "rank": "24",
+    "tab_place": 24,
+    "pts": 9,
+    "p_break": 0.3862,
+    "p_break_neutral": 0.3862,
+    "mean_pts": 9.176,
+    "mean_place": 24.0103,
+    "place_80": [
+     6.0,
+     46.0
+    ],
+    "pts_pct": 0.45295,
+    "broke": false
+   },
+   {
+    "team": "Durham JB",
+    "rank": "25",
+    "tab_place": 25,
+    "pts": 9,
+    "p_break": 0.1522,
+    "p_break_neutral": 0.1448,
+    "mean_pts": 8.0476,
+    "mean_place": 36.0921,
+    "place_80": [
+     13.0,
+     60.0
+    ],
+    "pts_pct": 0.7007,
+    "broke": false
+   },
+   {
+    "team": "en.wikipedia.org/wiki/St_Conleth's_",
+    "rank": "26",
+    "tab_place": 26,
+    "pts": 9,
+    "p_break": 0.0765,
+    "p_break_neutral": 0.0698,
+    "mean_pts": 7.4285,
+    "mean_place": 43.1175,
+    "place_80": [
+     18.0,
+     67.0
+    ],
+    "pts_pct": 0.81365,
+    "broke": false
+   },
+   {
+    "team": "Inner Temple A",
+    "rank": "27",
+    "tab_place": 27,
+    "pts": 9,
+    "p_break": 0.3625,
+    "p_break_neutral": 0.3666,
+    "mean_pts": 9.1335,
+    "mean_place": 24.1877,
+    "place_80": [
+     7.0,
+     45.0
+    ],
+    "pts_pct": 0.4659,
+    "broke": false
+   },
+   {
+    "team": "KCL A",
+    "rank": "28",
+    "tab_place": 28,
+    "pts": 9,
+    "p_break": 0.2997,
+    "p_break_neutral": 0.3005,
+    "mean_pts": 8.853,
+    "mean_place": 27.3295,
+    "place_80": [
+     8.0,
+     50.0
+    ],
+    "pts_pct": 0.5307,
+    "broke": false
+   },
+   {
+    "team": "Malaya A",
+    "rank": "29",
+    "tab_place": 29,
+    "pts": 9,
+    "p_break": 0.2366,
+    "p_break_neutral": 0.2408,
+    "mean_pts": 8.5442,
+    "mean_place": 30.5444,
+    "place_80": [
+     10.0,
+     55.0
+    ],
+    "pts_pct": 0.59795,
+    "broke": false
+   },
+   {
+    "team": "Racky and Penny from Temu",
+    "rank": "30",
+    "tab_place": 30,
+    "pts": 9,
+    "p_break": 0.1468,
+    "p_break_neutral": 0.1452,
+    "mean_pts": 8.0163,
+    "mean_place": 36.4318,
+    "place_80": [
+     14.0,
+     60.0
+    ],
+    "pts_pct": 0.7100000000000001,
+    "broke": false
+   },
+   {
+    "team": "where is turtucaia",
+    "rank": "31",
+    "tab_place": 31,
+    "pts": 8,
+    "p_break": 0.1745,
+    "p_break_neutral": 0.1731,
+    "mean_pts": 8.2473,
+    "mean_place": 33.7728,
+    "place_80": [
+     12.0,
+     58.0
+    ],
+    "pts_pct": 0.4403,
+    "broke": false
+   },
+   {
+    "team": "Oxford J",
+    "rank": "32",
+    "tab_place": 32,
+    "pts": 8,
+    "p_break": 0.1208,
+    "p_break_neutral": 0.1132,
+    "mean_pts": 7.8937,
+    "mean_place": 37.8097,
+    "place_80": [
+     15.0,
+     60.0
+    ],
+    "pts_pct": 0.52855,
+    "broke": false
+   },
+   {
+    "team": "Malaya C",
+    "rank": "33",
+    "tab_place": 33,
+    "pts": 8,
+    "p_break": 0.0761,
+    "p_break_neutral": 0.0728,
+    "mean_pts": 7.5228,
+    "mean_place": 41.9652,
+    "place_80": [
+     18.0,
+     66.0
+    ],
+    "pts_pct": 0.6109,
+    "broke": false
+   },
+   {
+    "team": "Stanford LB",
+    "rank": "34",
+    "tab_place": 34,
+    "pts": 8,
+    "p_break": 0.0332,
+    "p_break_neutral": 0.0372,
+    "mean_pts": 6.9028,
+    "mean_place": 49.1022,
+    "place_80": [
+     25.0,
+     71.0
+    ],
+    "pts_pct": 0.7385999999999999,
+    "broke": false
+   },
+   {
+    "team": "Edinburgh JFFW",
+    "rank": "35",
+    "tab_place": 35,
+    "pts": 8,
+    "p_break": 0.1398,
+    "p_break_neutral": 0.1346,
+    "mean_pts": 8.047,
+    "mean_place": 35.9892,
+    "place_80": [
+     14.0,
+     59.0
+    ],
+    "pts_pct": 0.4873,
+    "broke": false
+   },
+   {
+    "team": "UCL C",
+    "rank": "36",
+    "tab_place": 36,
+    "pts": 8,
+    "p_break": 0.1052,
+    "p_break_neutral": 0.1028,
+    "mean_pts": 7.7474,
+    "mean_place": 39.4656,
+    "place_80": [
+     16.0,
+     63.0
+    ],
+    "pts_pct": 0.55755,
+    "broke": false
+   },
+   {
+    "team": "UCL B",
+    "rank": "37",
+    "tab_place": 37,
+    "pts": 8,
+    "p_break": 0.0791,
+    "p_break_neutral": 0.0795,
+    "mean_pts": 7.5469,
+    "mean_place": 41.7034,
+    "place_80": [
+     18.0,
+     66.0
+    ],
+    "pts_pct": 0.6015,
+    "broke": false
+   },
+   {
+    "team": "Malaya B",
+    "rank": "38",
+    "tab_place": 38,
+    "pts": 8,
+    "p_break": 0.1027,
+    "p_break_neutral": 0.0987,
+    "mean_pts": 7.7296,
+    "mean_place": 39.6594,
+    "place_80": [
+     16.0,
+     63.0
+    ],
+    "pts_pct": 0.5617,
+    "broke": false
+   },
+   {
+    "team": "Malaya E",
+    "rank": "39",
+    "tab_place": 39,
+    "pts": 8,
+    "p_break": 0.0488,
+    "p_break_neutral": 0.0434,
+    "mean_pts": 7.0742,
+    "mean_place": 47.1106,
+    "place_80": [
+     23.0,
+     69.0
+    ],
+    "pts_pct": 0.70495,
+    "broke": false
+   },
+   {
+    "team": "Batman and Robin",
+    "rank": "40",
+    "tab_place": 40,
+    "pts": 8,
+    "p_break": 0.0568,
+    "p_break_neutral": 0.0568,
+    "mean_pts": 7.239,
+    "mean_place": 45.2295,
+    "place_80": [
+     21.0,
+     68.0
+    ],
+    "pts_pct": 0.66635,
+    "broke": false
+   },
+   {
+    "team": "Good Beleno",
+    "rank": "41",
+    "tab_place": 41,
+    "pts": 8,
+    "p_break": 0.0646,
+    "p_break_neutral": 0.0635,
+    "mean_pts": 7.3638,
+    "mean_place": 43.7865,
+    "place_80": [
+     19.0,
+     67.0
+    ],
+    "pts_pct": 0.6445000000000001,
+    "broke": false
+   },
+   {
+    "team": "Stanford JS",
+    "rank": "42",
+    "tab_place": 42,
+    "pts": 8,
+    "p_break": 0.0472,
+    "p_break_neutral": 0.0476,
+    "mean_pts": 7.0946,
+    "mean_place": 46.8526,
+    "place_80": [
+     23.0,
+     69.0
+    ],
+    "pts_pct": 0.6989500000000001,
+    "broke": false
+   },
+   {
+    "team": "Oxford Hans and Chanidu",
+    "rank": "43",
+    "tab_place": 43,
+    "pts": 7,
+    "p_break": 0.1679,
+    "p_break_neutral": 0.1638,
+    "mean_pts": 8.1821,
+    "mean_place": 34.5239,
+    "place_80": [
+     12.0,
+     58.0
+    ],
+    "pts_pct": 0.25075000000000003,
+    "broke": false
+   },
+   {
+    "team": "Econ Challenge",
+    "rank": "44",
+    "tab_place": 44,
+    "pts": 7,
+    "p_break": 0.1488,
+    "p_break_neutral": 0.1411,
+    "mean_pts": 8.0917,
+    "mean_place": 35.594,
+    "place_80": [
+     14.0,
+     59.0
+    ],
+    "pts_pct": 0.2625,
+    "broke": false
+   },
+   {
+    "team": "The most honorable Maša and the Bea",
+    "rank": "45",
+    "tab_place": 45,
+    "pts": 7,
+    "p_break": 0.1295,
+    "p_break_neutral": 0.1339,
+    "mean_pts": 7.932,
+    "mean_place": 37.3423,
+    "place_80": [
+     14.0,
+     61.0
+    ],
+    "pts_pct": 0.29855,
+    "broke": false
+   },
+   {
+    "team": "Stockholm A",
+    "rank": "46",
+    "tab_place": 46,
+    "pts": 7,
+    "p_break": 0.0951,
+    "p_break_neutral": 0.0948,
+    "mean_pts": 7.7249,
+    "mean_place": 39.6672,
+    "place_80": [
+     17.0,
+     63.0
+    ],
+    "pts_pct": 0.33455,
+    "broke": false
+   },
+   {
+    "team": "#insync",
+    "rank": "47",
+    "tab_place": 47,
+    "pts": 7,
+    "p_break": 0.0763,
+    "p_break_neutral": 0.0722,
+    "mean_pts": 7.4361,
+    "mean_place": 42.9956,
+    "place_80": [
+     18.0,
+     67.0
+    ],
+    "pts_pct": 0.40365,
+    "broke": false
+   },
+   {
+    "team": "Kumar Mc Laughlin",
+    "rank": "48",
+    "tab_place": 48,
+    "pts": 7,
+    "p_break": 0.0231,
+    "p_break_neutral": 0.0219,
+    "mean_pts": 6.4746,
+    "mean_place": 53.7064,
+    "place_80": [
+     29.0,
+     75.0
+    ],
+    "pts_pct": 0.61995,
+    "broke": false
+   },
+   {
+    "team": "Stanford LM",
+    "rank": "49",
+    "tab_place": 49,
+    "pts": 7,
+    "p_break": 0.0431,
+    "p_break_neutral": 0.0433,
+    "mean_pts": 7.0251,
+    "mean_place": 47.7207,
+    "place_80": [
+     24.0,
+     70.0
+    ],
+    "pts_pct": 0.49955000000000005,
+    "broke": false
+   },
+   {
+    "team": "Kafkian Khalos",
+    "rank": "50",
+    "tab_place": 50,
+    "pts": 7,
+    "p_break": 0.0252,
+    "p_break_neutral": 0.0245,
+    "mean_pts": 6.6761,
+    "mean_place": 51.5249,
+    "place_80": [
+     27.0,
+     73.0
+    ],
+    "pts_pct": 0.5767,
+    "broke": false
+   },
+   {
+    "team": "Arwaa and Rizwan",
+    "rank": "51",
+    "tab_place": 51,
+    "pts": 7,
+    "p_break": 0.0743,
+    "p_break_neutral": 0.0757,
+    "mean_pts": 7.5068,
+    "mean_place": 42.1603,
+    "place_80": [
+     18.0,
+     66.0
+    ],
+    "pts_pct": 0.38545,
+    "broke": false
+   },
+   {
+    "team": "LSE D",
+    "rank": "52",
+    "tab_place": 52,
+    "pts": 7,
+    "p_break": 0.0886,
+    "p_break_neutral": 0.0819,
+    "mean_pts": 7.6422,
+    "mean_place": 40.615,
+    "place_80": [
+     17.0,
+     64.0
+    ],
+    "pts_pct": 0.35340000000000005,
+    "broke": false
+   },
+   {
+    "team": "Tartu B",
+    "rank": "53",
+    "tab_place": 53,
+    "pts": 7,
+    "p_break": 0.0303,
+    "p_break_neutral": 0.0315,
+    "mean_pts": 6.8602,
+    "mean_place": 49.5358,
+    "place_80": [
+     26.0,
+     71.0
+    ],
+    "pts_pct": 0.5332,
+    "broke": false
+   },
+   {
+    "team": "Edinburgh T",
+    "rank": "54",
+    "tab_place": 54,
+    "pts": 7,
+    "p_break": 0.0503,
+    "p_break_neutral": 0.0472,
+    "mean_pts": 7.1611,
+    "mean_place": 46.1749,
+    "place_80": [
+     23.0,
+     68.0
+    ],
+    "pts_pct": 0.46905,
+    "broke": false
+   },
+   {
+    "team": "PhD Destiny",
+    "rank": "55",
+    "tab_place": 55,
+    "pts": 7,
+    "p_break": 0.0198,
+    "p_break_neutral": 0.0161,
+    "mean_pts": 6.2951,
+    "mean_place": 55.5031,
+    "place_80": [
+     30.0,
+     76.0
+    ],
+    "pts_pct": 0.659,
+    "broke": false
+   },
+   {
+    "team": "Stanford ZW",
+    "rank": "57",
+    "tab_place": 56,
+    "pts": 6,
+    "p_break": 0.0461,
+    "p_break_neutral": 0.0439,
+    "mean_pts": 7.0845,
+    "mean_place": 46.9949,
+    "place_80": [
+     23.0,
+     69.0
+    ],
+    "pts_pct": 0.26705,
+    "broke": false
+   },
+   {
+    "team": "KCL C",
+    "rank": "58",
+    "tab_place": 57,
+    "pts": 6,
+    "p_break": 0.0462,
+    "p_break_neutral": 0.0453,
+    "mean_pts": 7.128,
+    "mean_place": 46.4856,
+    "place_80": [
+     23.0,
+     69.0
+    ],
+    "pts_pct": 0.26034999999999997,
+    "broke": false
+   },
+   {
+    "team": "Imperial A",
+    "rank": "59",
+    "tab_place": 58,
+    "pts": 6,
+    "p_break": 0.0092,
+    "p_break_neutral": 0.0069,
+    "mean_pts": 5.9337,
+    "mean_place": 59.5236,
+    "place_80": [
+     38.0,
+     77.0
+    ],
+    "pts_pct": 0.52765,
+    "broke": false
+   },
+   {
+    "team": "Hal",
+    "rank": "60",
+    "tab_place": 59,
+    "pts": 6,
+    "p_break": 0.0212,
+    "p_break_neutral": 0.019,
+    "mean_pts": 6.4816,
+    "mean_place": 53.6453,
+    "place_80": [
+     29.0,
+     74.0
+    ],
+    "pts_pct": 0.3988,
+    "broke": false
+   },
+   {
+    "team": "Malaya F",
+    "rank": "61",
+    "tab_place": 60,
+    "pts": 6,
+    "p_break": 0.0137,
+    "p_break_neutral": 0.013,
+    "mean_pts": 6.3305,
+    "mean_place": 55.3444,
+    "place_80": [
+     31.0,
+     75.0
+    ],
+    "pts_pct": 0.43045,
+    "broke": false
+   },
+   {
+    "team": "Res Ipsa Talk Your Way Out",
+    "rank": "62",
+    "tab_place": 61,
+    "pts": 6,
+    "p_break": 0.0086,
+    "p_break_neutral": 0.0088,
+    "mean_pts": 5.935,
+    "mean_place": 59.273,
+    "place_80": [
+     38.0,
+     77.0
+    ],
+    "pts_pct": 0.521,
+    "broke": false
+   },
+   {
+    "team": "TCD Phil B",
+    "rank": "63",
+    "tab_place": 62,
+    "pts": 6,
+    "p_break": 0.0153,
+    "p_break_neutral": 0.0163,
+    "mean_pts": 6.2623,
+    "mean_place": 55.8253,
+    "place_80": [
+     30.0,
+     76.0
+    ],
+    "pts_pct": 0.45085000000000003,
+    "broke": false
+   },
+   {
+    "team": "Law and Lore",
+    "rank": "64",
+    "tab_place": 63,
+    "pts": 6,
+    "p_break": 0.0055,
+    "p_break_neutral": 0.005,
+    "mean_pts": 5.5893,
+    "mean_place": 62.7188,
+    "place_80": [
+     41.0,
+     79.0
+    ],
+    "pts_pct": 0.6087,
+    "broke": false
+   },
+   {
+    "team": "EDS C",
+    "rank": "65",
+    "tab_place": 64,
+    "pts": 6,
+    "p_break": 0.0043,
+    "p_break_neutral": 0.0041,
+    "mean_pts": 5.6088,
+    "mean_place": 62.7151,
+    "place_80": [
+     41.0,
+     78.0
+    ],
+    "pts_pct": 0.6047,
+    "broke": false
+   },
+   {
+    "team": "KCL B",
+    "rank": "66",
+    "tab_place": 65,
+    "pts": 5,
+    "p_break": 0.0236,
+    "p_break_neutral": 0.0174,
+    "mean_pts": 6.4077,
+    "mean_place": 54.4163,
+    "place_80": [
+     29.0,
+     75.0
+    ],
+    "pts_pct": 0.21894999999999998,
+    "broke": false
+   },
+   {
+    "team": "Rupem Baraka",
+    "rank": "67",
+    "tab_place": 66,
+    "pts": 5,
+    "p_break": 0.016,
+    "p_break_neutral": 0.0145,
+    "mean_pts": 6.2458,
+    "mean_place": 56.1253,
+    "place_80": [
+     32.0,
+     76.0
+    ],
+    "pts_pct": 0.2489,
+    "broke": false
+   },
+   {
+    "team": "Oxford I(dgaf)",
+    "rank": "68",
+    "tab_place": 67,
+    "pts": 5,
+    "p_break": 0.0169,
+    "p_break_neutral": 0.0148,
+    "mean_pts": 6.3477,
+    "mean_place": 55.0756,
+    "place_80": [
+     30.0,
+     75.0
+    ],
+    "pts_pct": 0.22350000000000003,
+    "broke": false
+   },
+   {
+    "team": "Claremont LF",
+    "rank": "69",
+    "tab_place": 68,
+    "pts": 5,
+    "p_break": 0.0087,
+    "p_break_neutral": 0.0086,
+    "mean_pts": 5.9588,
+    "mean_place": 59.1355,
+    "place_80": [
+     37.0,
+     77.0
+    ],
+    "pts_pct": 0.2968,
+    "broke": false
+   },
+   {
+    "team": "EDS B",
+    "rank": "70",
+    "tab_place": 69,
+    "pts": 5,
+    "p_break": 0.0119,
+    "p_break_neutral": 0.0132,
+    "mean_pts": 6.1172,
+    "mean_place": 57.5499,
+    "place_80": [
+     35.0,
+     76.0
+    ],
+    "pts_pct": 0.2655,
+    "broke": false
+   },
+   {
+    "team": "UCD LawSoc A",
+    "rank": "71",
+    "tab_place": 70,
+    "pts": 5,
+    "p_break": 0.0105,
+    "p_break_neutral": 0.009,
+    "mean_pts": 6.0659,
+    "mean_place": 58.0934,
+    "place_80": [
+     36.0,
+     76.0
+    ],
+    "pts_pct": 0.2698,
+    "broke": false
+   },
+   {
+    "team": "Las Pulgas",
+    "rank": "72",
+    "tab_place": 71,
+    "pts": 5,
+    "p_break": 0.0165,
+    "p_break_neutral": 0.0136,
+    "mean_pts": 6.2457,
+    "mean_place": 56.0956,
+    "place_80": [
+     31.0,
+     76.0
+    ],
+    "pts_pct": 0.24895,
+    "broke": false
+   },
+   {
+    "team": "KK Dinamik",
+    "rank": "73",
+    "tab_place": 72,
+    "pts": 5,
+    "p_break": 0.005,
+    "p_break_neutral": 0.0022,
+    "mean_pts": 5.2596,
+    "mean_place": 65.262,
+    "place_80": [
+     43.0,
+     80.0
+    ],
+    "pts_pct": 0.4578,
+    "broke": false
+   },
+   {
+    "team": "Imperial C",
+    "rank": "74",
+    "tab_place": 73,
+    "pts": 5,
+    "p_break": 0.0024,
+    "p_break_neutral": 0.0025,
+    "mean_pts": 4.9862,
+    "mean_place": 67.6773,
+    "place_80": [
+     50.0,
+     80.0
+    ],
+    "pts_pct": 0.52415,
+    "broke": false
+   },
+   {
+    "team": "LSE C",
+    "rank": "75",
+    "tab_place": 74,
+    "pts": 4,
+    "p_break": 0.0113,
+    "p_break_neutral": 0.0093,
+    "mean_pts": 6.0882,
+    "mean_place": 57.6899,
+    "place_80": [
+     35.0,
+     77.0
+    ],
+    "pts_pct": 0.11374999999999999,
+    "broke": false
+   },
+   {
+    "team": "Ill persons",
+    "rank": "76",
+    "tab_place": 75,
+    "pts": 4,
+    "p_break": 0.0056,
+    "p_break_neutral": 0.0059,
+    "mean_pts": 5.5372,
+    "mean_place": 62.988,
+    "place_80": [
+     41.0,
+     79.0
+    ],
+    "pts_pct": 0.1898,
+    "broke": false
+   },
+   {
+    "team": "Stockholm B",
+    "rank": "77",
+    "tab_place": 76,
+    "pts": 4,
+    "p_break": 0.0014,
+    "p_break_neutral": 0.0016,
+    "mean_pts": 4.4185,
+    "mean_place": 71.5146,
+    "place_80": [
+     55.0,
+     82.0
+    ],
+    "pts_pct": 0.4205,
+    "broke": false
+   },
+   {
+    "team": "UCD LawSoc B - Emma + Irene",
+    "rank": "78",
+    "tab_place": 77,
+    "pts": 4,
+    "p_break": 0.0007,
+    "p_break_neutral": 0.0009,
+    "mean_pts": 4.5653,
+    "mean_place": 70.9772,
+    "place_80": [
+     55.0,
+     81.0
+    ],
+    "pts_pct": 0.37224999999999997,
+    "broke": false
+   },
+   {
+    "team": "UCD LawSoc C",
+    "rank": "79",
+    "tab_place": 78,
+    "pts": 4,
+    "p_break": 0.001,
+    "p_break_neutral": 0.0007,
+    "mean_pts": 4.5759,
+    "mean_place": 70.8128,
+    "place_80": [
+     54.0,
+     81.0
+    ],
+    "pts_pct": 0.37629999999999997,
+    "broke": false
+   },
+   {
+    "team": "EDS A",
+    "rank": "80",
+    "tab_place": 79,
+    "pts": 3,
+    "p_break": 0.0008,
+    "p_break_neutral": 0.0008,
+    "mean_pts": 4.2848,
+    "mean_place": 72.4222,
+    "place_80": [
+     56.0,
+     82.0
+    ],
+    "pts_pct": 0.22955,
+    "broke": false
+   },
+   {
+    "team": "Objectively correct",
+    "rank": "81",
+    "tab_place": 80,
+    "pts": 3,
+    "p_break": 0.0016,
+    "p_break_neutral": 0.0008,
+    "mean_pts": 4.5337,
+    "mean_place": 70.9812,
+    "place_80": [
+     54.0,
+     82.0
+    ],
+    "pts_pct": 0.1804,
+    "broke": false
+   },
+   {
+    "team": "XJTLU",
+    "rank": "82",
+    "tab_place": 81,
+    "pts": 3,
+    "p_break": 0.0009,
+    "p_break_neutral": 0.0009,
+    "mean_pts": 4.3285,
+    "mean_place": 72.3404,
+    "place_80": [
+     57.0,
+     82.0
+    ],
+    "pts_pct": 0.21835,
+    "broke": false
+   },
+   {
+    "team": "History and Law Combo will destroy",
+    "rank": "83",
+    "tab_place": 82,
+    "pts": 2,
+    "p_break": 0.0002,
+    "p_break_neutral": 0.0001,
+    "mean_pts": 3.4323,
+    "mean_place": 76.3347,
+    "place_80": [
+     65.0,
+     83.0
+    ],
+    "pts_pct": 0.2218,
+    "broke": false
+   },
+   {
+    "team": "EDS D",
+    "rank": "84",
+    "tab_place": 83,
+    "pts": 0,
+    "p_break": 0.0004,
+    "p_break_neutral": 0.0005,
+    "mean_pts": 1.9617,
+    "mean_place": 80.0593,
+    "place_80": [
+     74.0,
+     83.0
+    ],
+    "pts_pct": 0.1547,
+    "broke": false
+   }
+  ],
+  "summary": {
+   "overlap_real": 11.8372,
+   "overlap_neutral": 12.0046,
+   "sim_hist": [
+    0.4293,
+    0.4642,
+    1.0472,
+    2.6327,
+    5.1807,
+    8.1317,
+    10.8131,
+    12.4915,
+    12.5396,
+    10.9891,
+    8.3432,
+    5.3013,
+    2.7213,
+    1.0345,
+    0.4671,
+    0.4135
+   ],
+   "real_hist": [
+    1,
+    0,
+    1,
+    3,
+    5,
+    9,
+    9,
+    13,
+    12,
+    11,
+    9,
+    6,
+    3,
+    0,
+    0,
+    1
+   ],
+   "pit": [
+    0.8327,
+    0.6993,
+    0.69935,
+    0.69885,
+    0.5881000000000001,
+    0.7105,
+    0.83665,
+    0.7844,
+    0.80435,
+    0.774,
+    0.6077,
+    0.67255,
+    0.533,
+    0.5553,
+    0.6071,
+    0.6093500000000001,
+    0.76895,
+    0.67575,
+    0.78655,
+    0.3687,
+    0.46190000000000003,
+    0.5375000000000001,
+    0.49019999999999997,
+    0.45295,
+    0.7007,
+    0.81365,
+    0.4659,
+    0.5307,
+    0.59795,
+    0.7100000000000001,
+    0.4403,
+    0.52855,
+    0.6109,
+    0.7385999999999999,
+    0.4873,
+    0.55755,
+    0.6015,
+    0.5617,
+    0.70495,
+    0.66635,
+    0.6445000000000001,
+    0.6989500000000001,
+    0.25075000000000003,
+    0.2625,
+    0.29855,
+    0.33455,
+    0.40365,
+    0.61995,
+    0.49955000000000005,
+    0.5767,
+    0.38545,
+    0.35340000000000005,
+    0.5332,
+    0.46905,
+    0.659,
+    0.26705,
+    0.26034999999999997,
+    0.52765,
+    0.3988,
+    0.43045,
+    0.521,
+    0.45085000000000003,
+    0.6087,
+    0.6047,
+    0.21894999999999998,
+    0.2489,
+    0.22350000000000003,
+    0.2968,
+    0.2655,
+    0.2698,
+    0.24895,
+    0.4578,
+    0.52415,
+    0.11374999999999999,
+    0.1898,
+    0.4205,
+    0.37224999999999997,
+    0.37629999999999997,
+    0.22955,
+    0.1804,
+    0.21835,
+    0.2218,
+    0.1547
+   ],
+   "exp_breakers_rebreak": 9.6225,
+   "teams_with_p50": 10
+  }
+ },
+ "oxf": {
+  "teams": [
+   {
+    "team": "Harvard A",
+    "rank": "1",
+    "tab_place": 1,
+    "pts": 15,
+    "p_break": 0.8999,
+    "p_break_neutral": 0.9052,
+    "mean_pts": 12.8765,
+    "mean_place": 5.8542,
+    "place_80": [
+     1.0,
+     17.0
+    ],
+    "pts_pct": 0.88455,
+    "broke": true
+   },
+   {
+    "team": "MDU B",
+    "rank": "2",
+    "tab_place": 2,
+    "pts": 13,
+    "p_break": 0.8324,
+    "p_break_neutral": 0.8361,
+    "mean_pts": 11.8621,
+    "mean_place": 8.7976,
+    "place_80": [
+     1.0,
+     20.0
+    ],
+    "pts_pct": 0.7519,
+    "broke": true
+   },
+   {
+    "team": "Cambridge A",
+    "rank": "3",
+    "tab_place": 3,
+    "pts": 12,
+    "p_break": 0.6634,
+    "p_break_neutral": 0.6659,
+    "mean_pts": 11.0433,
+    "mean_place": 14.736,
+    "place_80": [
+     2.0,
+     33.0
+    ],
+    "pts_pct": 0.7126,
+    "broke": true
+   },
+   {
+    "team": "Stanford A",
+    "rank": "4",
+    "tab_place": 4,
+    "pts": 12,
+    "p_break": 0.5605,
+    "p_break_neutral": 0.56,
+    "mean_pts": 10.6319,
+    "mean_place": 18.6682,
+    "place_80": [
+     3.0,
+     43.0
+    ],
+    "pts_pct": 0.79115,
+    "broke": true
+   },
+   {
+    "team": "LBS A",
+    "rank": "5",
+    "tab_place": 5,
+    "pts": 12,
+    "p_break": 0.5783,
+    "p_break_neutral": 0.5735,
+    "mean_pts": 10.7041,
+    "mean_place": 18.2923,
+    "place_80": [
+     3.0,
+     43.0
+    ],
+    "pts_pct": 0.7702,
+    "broke": true
+   },
+   {
+    "team": "QDU A",
+    "rank": "6",
+    "tab_place": 6,
+    "pts": 12,
+    "p_break": 0.6545,
+    "p_break_neutral": 0.6539,
+    "mean_pts": 10.9759,
+    "mean_place": 15.2205,
+    "place_80": [
+     2.0,
+     34.0
+    ],
+    "pts_pct": 0.72905,
+    "broke": true
+   },
+   {
+    "team": "HHDC A",
+    "rank": "7",
+    "tab_place": 7,
+    "pts": 12,
+    "p_break": 0.499,
+    "p_break_neutral": 0.4965,
+    "mean_pts": 10.3767,
+    "mean_place": 21.1439,
+    "place_80": [
+     4.0,
+     48.0
+    ],
+    "pts_pct": 0.83925,
+    "broke": true
+   },
+   {
+    "team": "Edinburgh Ξ",
+    "rank": "8",
+    "tab_place": 8,
+    "pts": 11,
+    "p_break": 0.4348,
+    "p_break_neutral": 0.435,
+    "mean_pts": 10.153,
+    "mean_place": 23.8674,
+    "place_80": [
+     5.0,
+     50.0
+    ],
+    "pts_pct": 0.6900000000000001,
+    "broke": true
+   },
+   {
+    "team": "ULaw A",
+    "rank": "9",
+    "tab_place": 9,
+    "pts": 11,
+    "p_break": 0.4995,
+    "p_break_neutral": 0.4958,
+    "mean_pts": 10.3775,
+    "mean_place": 21.0368,
+    "place_80": [
+     4.0,
+     47.0
+    ],
+    "pts_pct": 0.6405000000000001,
+    "broke": true
+   },
+   {
+    "team": "LSE A",
+    "rank": "10",
+    "tab_place": 10,
+    "pts": 11,
+    "p_break": 0.7266,
+    "p_break_neutral": 0.7399,
+    "mean_pts": 11.2901,
+    "mean_place": 12.4775,
+    "place_80": [
+     2.0,
+     30.0
+    ],
+    "pts_pct": 0.41875,
+    "broke": true
+   },
+   {
+    "team": "EDS A",
+    "rank": "11",
+    "tab_place": 11,
+    "pts": 11,
+    "p_break": 0.4089,
+    "p_break_neutral": 0.4031,
+    "mean_pts": 10.0345,
+    "mean_place": 25.2111,
+    "place_80": [
+     5.0,
+     52.0
+    ],
+    "pts_pct": 0.7144,
+    "broke": true
+   },
+   {
+    "team": "KCL A",
+    "rank": "12",
+    "tab_place": 12,
+    "pts": 11,
+    "p_break": 0.5311,
+    "p_break_neutral": 0.5384,
+    "mean_pts": 10.5299,
+    "mean_place": 19.6173,
+    "place_80": [
+     3.0,
+     46.0
+    ],
+    "pts_pct": 0.60415,
+    "broke": true
+   },
+   {
+    "team": "Harvard E",
+    "rank": "13",
+    "tab_place": 13,
+    "pts": 11,
+    "p_break": 0.3158,
+    "p_break_neutral": 0.3147,
+    "mean_pts": 9.6766,
+    "mean_place": 29.9035,
+    "place_80": [
+     7.0,
+     60.0
+    ],
+    "pts_pct": 0.7827500000000001,
+    "broke": true
+   },
+   {
+    "team": "Harvard D",
+    "rank": "14",
+    "tab_place": 14,
+    "pts": 11,
+    "p_break": 0.3982,
+    "p_break_neutral": 0.3937,
+    "mean_pts": 10.0129,
+    "mean_place": 25.3388,
+    "place_80": [
+     5.0,
+     52.0
+    ],
+    "pts_pct": 0.72095,
+    "broke": true
+   },
+   {
+    "team": "Edinburgh Δ",
+    "rank": "15",
+    "tab_place": 15,
+    "pts": 11,
+    "p_break": 0.2497,
+    "p_break_neutral": 0.251,
+    "mean_pts": 9.3624,
+    "mean_place": 34.5634,
+    "place_80": [
+     8.0,
+     69.0
+    ],
+    "pts_pct": 0.82985,
+    "broke": true
+   },
+   {
+    "team": "Ljubljana A",
+    "rank": "16",
+    "tab_place": 16,
+    "pts": 11,
+    "p_break": 0.3022,
+    "p_break_neutral": 0.3092,
+    "mean_pts": 9.6252,
+    "mean_place": 30.8061,
+    "place_80": [
+     7.0,
+     64.0
+    ],
+    "pts_pct": 0.7912,
+    "broke": true
+   },
+   {
+    "team": "Durham LH",
+    "rank": "17",
+    "tab_place": 17,
+    "pts": 10,
+    "p_break": 0.4771,
+    "p_break_neutral": 0.4796,
+    "mean_pts": 10.314,
+    "mean_place": 21.6916,
+    "place_80": [
+     4.0,
+     48.0
+    ],
+    "pts_pct": 0.41910000000000003,
+    "broke": false
+   },
+   {
+    "team": "LSE B",
+    "rank": "18",
+    "tab_place": 18,
+    "pts": 10,
+    "p_break": 0.436,
+    "p_break_neutral": 0.4347,
+    "mean_pts": 10.1665,
+    "mean_place": 23.5332,
+    "place_80": [
+     5.0,
+     50.0
+    ],
+    "pts_pct": 0.4536,
+    "broke": false
+   },
+   {
+    "team": "Cambridge D",
+    "rank": "19",
+    "tab_place": 19,
+    "pts": 10,
+    "p_break": 0.1852,
+    "p_break_neutral": 0.1883,
+    "mean_pts": 9.0407,
+    "mean_place": 39.5264,
+    "place_80": [
+     11.0,
+     74.0
+    ],
+    "pts_pct": 0.714,
+    "broke": false
+   },
+   {
+    "team": "GUU A",
+    "rank": "20",
+    "tab_place": 20,
+    "pts": 10,
+    "p_break": 0.3044,
+    "p_break_neutral": 0.302,
+    "mean_pts": 9.647,
+    "mean_place": 30.2352,
+    "place_80": [
+     7.0,
+     60.0
+    ],
+    "pts_pct": 0.5767,
+    "broke": false
+   },
+   {
+    "team": "Durham KT",
+    "rank": "21",
+    "tab_place": 21,
+    "pts": 10,
+    "p_break": 0.2614,
+    "p_break_neutral": 0.2732,
+    "mean_pts": 9.4686,
+    "mean_place": 32.6875,
+    "place_80": [
+     8.0,
+     66.10000000000036
+    ],
+    "pts_pct": 0.6194,
+    "broke": false
+   },
+   {
+    "team": "Malaya C",
+    "rank": "22",
+    "tab_place": 22,
+    "pts": 10,
+    "p_break": 0.3711,
+    "p_break_neutral": 0.3747,
+    "mean_pts": 9.8755,
+    "mean_place": 27.627,
+    "place_80": [
+     5.0,
+     57.0
+    ],
+    "pts_pct": 0.52065,
+    "broke": false
+   },
+   {
+    "team": "Belgrade B",
+    "rank": "23",
+    "tab_place": 23,
+    "pts": 10,
+    "p_break": 0.2319,
+    "p_break_neutral": 0.2327,
+    "mean_pts": 9.3056,
+    "mean_place": 35.1806,
+    "place_80": [
+     9.0,
+     68.0
+    ],
+    "pts_pct": 0.6628999999999999,
+    "broke": false
+   },
+   {
+    "team": "Cambridge B",
+    "rank": "24",
+    "tab_place": 24,
+    "pts": 10,
+    "p_break": 0.279,
+    "p_break_neutral": 0.2835,
+    "mean_pts": 9.5352,
+    "mean_place": 31.9006,
+    "place_80": [
+     8.0,
+     65.0
+    ],
+    "pts_pct": 0.60605,
+    "broke": false
+   },
+   {
+    "team": "Inner Temple A",
+    "rank": "25",
+    "tab_place": 25,
+    "pts": 10,
+    "p_break": 0.3099,
+    "p_break_neutral": 0.3138,
+    "mean_pts": 9.6674,
+    "mean_place": 29.8272,
+    "place_80": [
+     7.0,
+     59.0
+    ],
+    "pts_pct": 0.57365,
+    "broke": false
+   },
+   {
+    "team": "NYUAD A",
+    "rank": "26",
+    "tab_place": 26,
+    "pts": 10,
+    "p_break": 0.1919,
+    "p_break_neutral": 0.1845,
+    "mean_pts": 9.0851,
+    "mean_place": 38.661,
+    "place_80": [
+     11.0,
+     72.0
+    ],
+    "pts_pct": 0.7032499999999999,
+    "broke": false
+   },
+   {
+    "team": "UDS A",
+    "rank": "27",
+    "tab_place": 27,
+    "pts": 10,
+    "p_break": 0.0931,
+    "p_break_neutral": 0.0951,
+    "mean_pts": 8.4078,
+    "mean_place": 49.8905,
+    "place_80": [
+     17.0,
+     87.0
+    ],
+    "pts_pct": 0.82815,
+    "broke": false
+   },
+   {
+    "team": "Harvard C",
+    "rank": "28",
+    "tab_place": 28,
+    "pts": 10,
+    "p_break": 0.1883,
+    "p_break_neutral": 0.1815,
+    "mean_pts": 9.0563,
+    "mean_place": 39.1083,
+    "place_80": [
+     11.0,
+     72.0
+    ],
+    "pts_pct": 0.70885,
+    "broke": false
+   },
+   {
+    "team": "TCD Phil A",
+    "rank": "29",
+    "tab_place": 29,
+    "pts": 9,
+    "p_break": 0.2889,
+    "p_break_neutral": 0.2854,
+    "mean_pts": 9.5442,
+    "mean_place": 31.7436,
+    "place_80": [
+     8.0,
+     66.0
+    ],
+    "pts_pct": 0.36475,
+    "broke": false
+   },
+   {
+    "team": "StA TB",
+    "rank": "30",
+    "tab_place": 30,
+    "pts": 9,
+    "p_break": 0.1758,
+    "p_break_neutral": 0.1694,
+    "mean_pts": 8.9921,
+    "mean_place": 40.202,
+    "place_80": [
+     12.0,
+     73.0
+    ],
+    "pts_pct": 0.49885,
+    "broke": false
+   },
+   {
+    "team": "MDU A",
+    "rank": "31",
+    "tab_place": 31,
+    "pts": 9,
+    "p_break": 0.2874,
+    "p_break_neutral": 0.293,
+    "mean_pts": 9.5663,
+    "mean_place": 31.3529,
+    "place_80": [
+     8.0,
+     62.0
+    ],
+    "pts_pct": 0.36205,
+    "broke": false
+   },
+   {
+    "team": "UChicago B",
+    "rank": "32",
+    "tab_place": 32,
+    "pts": 9,
+    "p_break": 0.265,
+    "p_break_neutral": 0.2737,
+    "mean_pts": 9.5006,
+    "mean_place": 32.1413,
+    "place_80": [
+     8.0,
+     64.0
+    ],
+    "pts_pct": 0.3759,
+    "broke": false
+   },
+   {
+    "team": "GUU B",
+    "rank": "33",
+    "tab_place": 33,
+    "pts": 9,
+    "p_break": 0.169,
+    "p_break_neutral": 0.1658,
+    "mean_pts": 8.9555,
+    "mean_place": 40.8223,
+    "place_80": [
+     12.0,
+     74.0
+    ],
+    "pts_pct": 0.50915,
+    "broke": false
+   },
+   {
+    "team": "StA A",
+    "rank": "34",
+    "tab_place": 34,
+    "pts": 9,
+    "p_break": 0.1336,
+    "p_break_neutral": 0.1341,
+    "mean_pts": 8.7284,
+    "mean_place": 44.3336,
+    "place_80": [
+     14.0,
+     79.0
+    ],
+    "pts_pct": 0.55975,
+    "broke": false
+   },
+   {
+    "team": "Princeton A",
+    "rank": "35",
+    "tab_place": 35,
+    "pts": 9,
+    "p_break": 0.042,
+    "p_break_neutral": 0.0421,
+    "mean_pts": 7.7886,
+    "mean_place": 60.668,
+    "place_80": [
+     26.0,
+     95.0
+    ],
+    "pts_pct": 0.7676000000000001,
+    "broke": false
+   },
+   {
+    "team": "LSE C",
+    "rank": "36",
+    "tab_place": 36,
+    "pts": 9,
+    "p_break": 0.1519,
+    "p_break_neutral": 0.1491,
+    "mean_pts": 8.8447,
+    "mean_place": 42.4644,
+    "place_80": [
+     13.0,
+     76.0
+    ],
+    "pts_pct": 0.53325,
+    "broke": false
+   },
+   {
+    "team": "Alaska B",
+    "rank": "37",
+    "tab_place": 37,
+    "pts": 9,
+    "p_break": 0.0878,
+    "p_break_neutral": 0.0801,
+    "mean_pts": 8.3354,
+    "mean_place": 51.1197,
+    "place_80": [
+     18.0,
+     88.0
+    ],
+    "pts_pct": 0.6536000000000001,
+    "broke": false
+   },
+   {
+    "team": "MDU C",
+    "rank": "38",
+    "tab_place": 38,
+    "pts": 9,
+    "p_break": 0.0726,
+    "p_break_neutral": 0.0723,
+    "mean_pts": 8.1958,
+    "mean_place": 53.4989,
+    "place_80": [
+     20.0,
+     90.0
+    ],
+    "pts_pct": 0.68325,
+    "broke": false
+   },
+   {
+    "team": "Manchester B",
+    "rank": "39",
+    "tab_place": 39,
+    "pts": 9,
+    "p_break": 0.0674,
+    "p_break_neutral": 0.0661,
+    "mean_pts": 8.0678,
+    "mean_place": 55.8511,
+    "place_80": [
+     21.0,
+     91.0
+    ],
+    "pts_pct": 0.7107,
+    "broke": false
+   },
+   {
+    "team": "Yale A",
+    "rank": "40",
+    "tab_place": 40,
+    "pts": 9,
+    "p_break": 0.1111,
+    "p_break_neutral": 0.1161,
+    "mean_pts": 8.5555,
+    "mean_place": 47.2602,
+    "place_80": [
+     15.0,
+     84.0
+    ],
+    "pts_pct": 0.6031,
+    "broke": false
+   },
+   {
+    "team": "KCL B",
+    "rank": "41",
+    "tab_place": 41,
+    "pts": 9,
+    "p_break": 0.0702,
+    "p_break_neutral": 0.0675,
+    "mean_pts": 8.102,
+    "mean_place": 55.2248,
+    "place_80": [
+     21.0,
+     91.0
+    ],
+    "pts_pct": 0.703,
+    "broke": false
+   },
+   {
+    "team": "Ljubljana B",
+    "rank": "42",
+    "tab_place": 42,
+    "pts": 9,
+    "p_break": 0.0491,
+    "p_break_neutral": 0.0499,
+    "mean_pts": 7.8097,
+    "mean_place": 60.3354,
+    "place_80": [
+     25.0,
+     96.0
+    ],
+    "pts_pct": 0.7552000000000001,
+    "broke": false
+   },
+   {
+    "team": "Liverpool B",
+    "rank": "43",
+    "tab_place": 43,
+    "pts": 9,
+    "p_break": 0.125,
+    "p_break_neutral": 0.1243,
+    "mean_pts": 8.618,
+    "mean_place": 46.2557,
+    "place_80": [
+     15.0,
+     84.0
+    ],
+    "pts_pct": 0.585,
+    "broke": false
+   },
+   {
+    "team": "Heidelberg A",
+    "rank": "44",
+    "tab_place": 44,
+    "pts": 9,
+    "p_break": 0.0474,
+    "p_break_neutral": 0.0502,
+    "mean_pts": 7.8934,
+    "mean_place": 58.8446,
+    "place_80": [
+     25.0,
+     94.0
+    ],
+    "pts_pct": 0.74185,
+    "broke": false
+   },
+   {
+    "team": "Warwick A",
+    "rank": "45",
+    "tab_place": 45,
+    "pts": 9,
+    "p_break": 0.077,
+    "p_break_neutral": 0.072,
+    "mean_pts": 8.2898,
+    "mean_place": 51.7206,
+    "place_80": [
+     20.0,
+     88.0
+    ],
+    "pts_pct": 0.66245,
+    "broke": false
+   },
+   {
+    "team": "Bristol A",
+    "rank": "46",
+    "tab_place": 46,
+    "pts": 9,
+    "p_break": 0.0827,
+    "p_break_neutral": 0.0809,
+    "mean_pts": 8.2393,
+    "mean_place": 52.8094,
+    "place_80": [
+     19.0,
+     89.0
+    ],
+    "pts_pct": 0.67565,
+    "broke": false
+   },
+   {
+    "team": "Princeton B",
+    "rank": "47",
+    "tab_place": 47,
+    "pts": 9,
+    "p_break": 0.0954,
+    "p_break_neutral": 0.0991,
+    "mean_pts": 8.3784,
+    "mean_place": 50.3117,
+    "place_80": [
+     17.0,
+     88.0
+    ],
+    "pts_pct": 0.63915,
+    "broke": false
+   },
+   {
+    "team": "Belgrade A",
+    "rank": "48",
+    "tab_place": 48,
+    "pts": 8,
+    "p_break": 0.1234,
+    "p_break_neutral": 0.1235,
+    "mean_pts": 8.6335,
+    "mean_place": 46.0544,
+    "place_80": [
+     15.0,
+     84.0
+    ],
+    "pts_pct": 0.3513,
+    "broke": false
+   },
+   {
+    "team": "Malaya A",
+    "rank": "49",
+    "tab_place": 49,
+    "pts": 8,
+    "p_break": 0.1184,
+    "p_break_neutral": 0.1191,
+    "mean_pts": 8.6505,
+    "mean_place": 45.6455,
+    "place_80": [
+     15.0,
+     80.0
+    ],
+    "pts_pct": 0.3467,
+    "broke": false
+   },
+   {
+    "team": "UCL A",
+    "rank": "50",
+    "tab_place": 50,
+    "pts": 8,
+    "p_break": 0.0527,
+    "p_break_neutral": 0.0571,
+    "mean_pts": 7.9555,
+    "mean_place": 57.7571,
+    "place_80": [
+     23.90000000000009,
+     93.0
+    ],
+    "pts_pct": 0.5125500000000001,
+    "broke": false
+   },
+   {
+    "team": "Stanford B",
+    "rank": "51",
+    "tab_place": 51,
+    "pts": 8,
+    "p_break": 0.1116,
+    "p_break_neutral": 0.1105,
+    "mean_pts": 8.5694,
+    "mean_place": 47.0483,
+    "place_80": [
+     15.0,
+     84.0
+    ],
+    "pts_pct": 0.36824999999999997,
+    "broke": false
+   },
+   {
+    "team": "Malaya B",
+    "rank": "52",
+    "tab_place": 52,
+    "pts": 8,
+    "p_break": 0.0917,
+    "p_break_neutral": 0.0968,
+    "mean_pts": 8.4213,
+    "mean_place": 49.5844,
+    "place_80": [
+     18.0,
+     87.0
+    ],
+    "pts_pct": 0.3993,
+    "broke": false
+   },
+   {
+    "team": "HHDC C",
+    "rank": "53",
+    "tab_place": 53,
+    "pts": 8,
+    "p_break": 0.0415,
+    "p_break_neutral": 0.0402,
+    "mean_pts": 7.7414,
+    "mean_place": 61.5537,
+    "place_80": [
+     27.0,
+     96.0
+    ],
+    "pts_pct": 0.5586,
+    "broke": false
+   },
+   {
+    "team": "Stanford D",
+    "rank": "54",
+    "tab_place": 54,
+    "pts": 8,
+    "p_break": 0.103,
+    "p_break_neutral": 0.1025,
+    "mean_pts": 8.4352,
+    "mean_place": 49.4309,
+    "place_80": [
+     16.0,
+     87.0
+    ],
+    "pts_pct": 0.39854999999999996,
+    "broke": false
+   },
+   {
+    "team": "TCD Hist A",
+    "rank": "55",
+    "tab_place": 55,
+    "pts": 8,
+    "p_break": 0.0224,
+    "p_break_neutral": 0.0209,
+    "mean_pts": 7.2977,
+    "mean_place": 69.6046,
+    "place_80": [
+     34.0,
+     104.0
+    ],
+    "pts_pct": 0.66765,
+    "broke": false
+   },
+   {
+    "team": "Malaya E",
+    "rank": "56",
+    "tab_place": 56,
+    "pts": 8,
+    "p_break": 0.0601,
+    "p_break_neutral": 0.0595,
+    "mean_pts": 8.0173,
+    "mean_place": 56.6222,
+    "place_80": [
+     23.0,
+     92.0
+    ],
+    "pts_pct": 0.49855000000000005,
+    "broke": false
+   },
+   {
+    "team": "Cambridge C",
+    "rank": "57",
+    "tab_place": 57,
+    "pts": 8,
+    "p_break": 0.051,
+    "p_break_neutral": 0.0517,
+    "mean_pts": 7.9488,
+    "mean_place": 57.8322,
+    "place_80": [
+     24.0,
+     92.0
+    ],
+    "pts_pct": 0.5141,
+    "broke": false
+   },
+   {
+    "team": "HHDC B",
+    "rank": "58",
+    "tab_place": 58,
+    "pts": 8,
+    "p_break": 0.0106,
+    "p_break_neutral": 0.0098,
+    "mean_pts": 6.7875,
+    "mean_place": 78.6147,
+    "place_80": [
+     42.0,
+     110.0
+    ],
+    "pts_pct": 0.7685,
+    "broke": false
+   },
+   {
+    "team": "GMU A",
+    "rank": "59",
+    "tab_place": 59,
+    "pts": 8,
+    "p_break": 0.0446,
+    "p_break_neutral": 0.0412,
+    "mean_pts": 7.7485,
+    "mean_place": 61.605,
+    "place_80": [
+     26.0,
+     98.0
+    ],
+    "pts_pct": 0.56025,
+    "broke": false
+   },
+   {
+    "team": "LSE D",
+    "rank": "60",
+    "tab_place": 60,
+    "pts": 8,
+    "p_break": 0.0177,
+    "p_break_neutral": 0.017,
+    "mean_pts": 7.1636,
+    "mean_place": 71.9672,
+    "place_80": [
+     37.0,
+     105.0
+    ],
+    "pts_pct": 0.6942,
+    "broke": false
+   },
+   {
+    "team": "Tartu B",
+    "rank": "61",
+    "tab_place": 61,
+    "pts": 8,
+    "p_break": 0.0598,
+    "p_break_neutral": 0.0596,
+    "mean_pts": 8.0402,
+    "mean_place": 56.268,
+    "place_80": [
+     23.0,
+     91.0
+    ],
+    "pts_pct": 0.49319999999999997,
+    "broke": false
+   },
+   {
+    "team": "NYUAD C",
+    "rank": "62",
+    "tab_place": 62,
+    "pts": 8,
+    "p_break": 0.0339,
+    "p_break_neutral": 0.031,
+    "mean_pts": 7.5399,
+    "mean_place": 65.1596,
+    "place_80": [
+     28.0,
+     102.0
+    ],
+    "pts_pct": 0.60775,
+    "broke": false
+   },
+   {
+    "team": "Manchester A",
+    "rank": "63",
+    "tab_place": 63,
+    "pts": 8,
+    "p_break": 0.0085,
+    "p_break_neutral": 0.0105,
+    "mean_pts": 6.753,
+    "mean_place": 79.0766,
+    "place_80": [
+     43.0,
+     110.0
+    ],
+    "pts_pct": 0.7717,
+    "broke": false
+   },
+   {
+    "team": "MBZUAI A",
+    "rank": "64",
+    "tab_place": 64,
+    "pts": 8,
+    "p_break": 0.0216,
+    "p_break_neutral": 0.0194,
+    "mean_pts": 7.2958,
+    "mean_place": 69.6193,
+    "place_80": [
+     34.0,
+     104.0
+    ],
+    "pts_pct": 0.66685,
+    "broke": false
+   },
+   {
+    "team": "Imperial A",
+    "rank": "65",
+    "tab_place": 65,
+    "pts": 8,
+    "p_break": 0.0188,
+    "p_break_neutral": 0.0224,
+    "mean_pts": 7.2783,
+    "mean_place": 69.9848,
+    "place_80": [
+     34.0,
+     104.0
+    ],
+    "pts_pct": 0.6695,
+    "broke": false
+   },
+   {
+    "team": "Alaska C",
+    "rank": "66",
+    "tab_place": 66,
+    "pts": 8,
+    "p_break": 0.0038,
+    "p_break_neutral": 0.0039,
+    "mean_pts": 6.2268,
+    "mean_place": 88.1115,
+    "place_80": [
+     55.0,
+     116.0
+    ],
+    "pts_pct": 0.8541,
+    "broke": false
+   },
+   {
+    "team": "Tartu A",
+    "rank": "67",
+    "tab_place": 67,
+    "pts": 7,
+    "p_break": 0.0638,
+    "p_break_neutral": 0.0659,
+    "mean_pts": 8.145,
+    "mean_place": 54.263,
+    "place_80": [
+     22.0,
+     90.0
+    ],
+    "pts_pct": 0.2435,
+    "broke": false
+   },
+   {
+    "team": "Harvard F",
+    "rank": "68",
+    "tab_place": 68,
+    "pts": 7,
+    "p_break": 0.0453,
+    "p_break_neutral": 0.0439,
+    "mean_pts": 7.7532,
+    "mean_place": 61.4129,
+    "place_80": [
+     26.0,
+     97.0
+    ],
+    "pts_pct": 0.33325,
+    "broke": false
+   },
+   {
+    "team": "Brown A",
+    "rank": "69",
+    "tab_place": 69,
+    "pts": 7,
+    "p_break": 0.0463,
+    "p_break_neutral": 0.0445,
+    "mean_pts": 7.744,
+    "mean_place": 61.6544,
+    "place_80": [
+     25.0,
+     98.0
+    ],
+    "pts_pct": 0.3397,
+    "broke": false
+   },
+   {
+    "team": "Yale C",
+    "rank": "70",
+    "tab_place": 70,
+    "pts": 7,
+    "p_break": 0.0486,
+    "p_break_neutral": 0.0457,
+    "mean_pts": 7.8621,
+    "mean_place": 59.5364,
+    "place_80": [
+     25.0,
+     95.0
+    ],
+    "pts_pct": 0.3068,
+    "broke": false
+   },
+   {
+    "team": "Alaska A",
+    "rank": "71",
+    "tab_place": 71,
+    "pts": 7,
+    "p_break": 0.0152,
+    "p_break_neutral": 0.0143,
+    "mean_pts": 7.0801,
+    "mean_place": 73.4632,
+    "place_80": [
+     38.0,
+     107.0
+    ],
+    "pts_pct": 0.4865,
+    "broke": false
+   },
+   {
+    "team": "IIUM A",
+    "rank": "72",
+    "tab_place": 72,
+    "pts": 7,
+    "p_break": 0.0206,
+    "p_break_neutral": 0.0227,
+    "mean_pts": 7.2908,
+    "mean_place": 69.7318,
+    "place_80": [
+     34.0,
+     104.0
+    ],
+    "pts_pct": 0.43555,
+    "broke": false
+   },
+   {
+    "team": "Bristol B",
+    "rank": "73",
+    "tab_place": 73,
+    "pts": 7,
+    "p_break": 0.048,
+    "p_break_neutral": 0.0439,
+    "mean_pts": 7.7327,
+    "mean_place": 61.8184,
+    "place_80": [
+     25.0,
+     98.0
+    ],
+    "pts_pct": 0.3374,
+    "broke": false
+   },
+   {
+    "team": "Inner Temple B",
+    "rank": "74",
+    "tab_place": 74,
+    "pts": 7,
+    "p_break": 0.0266,
+    "p_break_neutral": 0.0249,
+    "mean_pts": 7.3273,
+    "mean_place": 69.052,
+    "place_80": [
+     32.0,
+     104.0
+    ],
+    "pts_pct": 0.429,
+    "broke": false
+   },
+   {
+    "team": "UCL B",
+    "rank": "75",
+    "tab_place": 75,
+    "pts": 7,
+    "p_break": 0.0242,
+    "p_break_neutral": 0.0242,
+    "mean_pts": 7.4329,
+    "mean_place": 67.1841,
+    "place_80": [
+     31.0,
+     102.0
+    ],
+    "pts_pct": 0.40285,
+    "broke": false
+   },
+   {
+    "team": "UCL C",
+    "rank": "76",
+    "tab_place": 76,
+    "pts": 7,
+    "p_break": 0.0263,
+    "p_break_neutral": 0.0242,
+    "mean_pts": 7.3916,
+    "mean_place": 67.9062,
+    "place_80": [
+     30.0,
+     103.0
+    ],
+    "pts_pct": 0.4133,
+    "broke": false
+   },
+   {
+    "team": "Liverpool A",
+    "rank": "77",
+    "tab_place": 77,
+    "pts": 7,
+    "p_break": 0.0242,
+    "p_break_neutral": 0.0223,
+    "mean_pts": 7.4328,
+    "mean_place": 67.1849,
+    "place_80": [
+     31.0,
+     103.0
+    ],
+    "pts_pct": 0.39859999999999995,
+    "broke": false
+   },
+   {
+    "team": "Colgate A",
+    "rank": "78",
+    "tab_place": 78,
+    "pts": 7,
+    "p_break": 0.0409,
+    "p_break_neutral": 0.0432,
+    "mean_pts": 7.766,
+    "mean_place": 61.1708,
+    "place_80": [
+     26.0,
+     96.0
+    ],
+    "pts_pct": 0.3231,
+    "broke": false
+   },
+   {
+    "team": "Cambridge F",
+    "rank": "79",
+    "tab_place": 79,
+    "pts": 7,
+    "p_break": 0.0034,
+    "p_break_neutral": 0.0037,
+    "mean_pts": 6.2457,
+    "mean_place": 87.9145,
+    "place_80": [
+     55.0,
+     116.0
+    ],
+    "pts_pct": 0.6849500000000001,
+    "broke": false
+   },
+   {
+    "team": "UCD LawSoc A",
+    "rank": "80",
+    "tab_place": 80,
+    "pts": 7,
+    "p_break": 0.007,
+    "p_break_neutral": 0.0067,
+    "mean_pts": 6.5435,
+    "mean_place": 82.795,
+    "place_80": [
+     46.0,
+     113.0
+    ],
+    "pts_pct": 0.6126,
+    "broke": false
+   },
+   {
+    "team": "StA C",
+    "rank": "81",
+    "tab_place": 81,
+    "pts": 7,
+    "p_break": 0.018,
+    "p_break_neutral": 0.0195,
+    "mean_pts": 7.1562,
+    "mean_place": 72.1097,
+    "place_80": [
+     36.0,
+     106.0
+    ],
+    "pts_pct": 0.46995,
+    "broke": false
+   },
+   {
+    "team": "Reading A",
+    "rank": "82",
+    "tab_place": 82,
+    "pts": 7,
+    "p_break": 0.0072,
+    "p_break_neutral": 0.0043,
+    "mean_pts": 6.4982,
+    "mean_place": 83.5589,
+    "place_80": [
+     46.90000000000009,
+     114.0
+    ],
+    "pts_pct": 0.6241,
+    "broke": false
+   },
+   {
+    "team": "Imperial B",
+    "rank": "83",
+    "tab_place": 83,
+    "pts": 7,
+    "p_break": 0.0027,
+    "p_break_neutral": 0.0025,
+    "mean_pts": 5.9074,
+    "mean_place": 93.1498,
+    "place_80": [
+     61.0,
+     118.0
+    ],
+    "pts_pct": 0.75245,
+    "broke": false
+   },
+   {
+    "team": "Liverpool C",
+    "rank": "84",
+    "tab_place": 84,
+    "pts": 7,
+    "p_break": 0.0272,
+    "p_break_neutral": 0.0243,
+    "mean_pts": 7.4112,
+    "mean_place": 67.5429,
+    "place_80": [
+     30.0,
+     103.0
+    ],
+    "pts_pct": 0.40565,
+    "broke": false
+   },
+   {
+    "team": "Stanford E",
+    "rank": "85",
+    "tab_place": 85,
+    "pts": 7,
+    "p_break": 0.0085,
+    "p_break_neutral": 0.0087,
+    "mean_pts": 6.6497,
+    "mean_place": 80.9385,
+    "place_80": [
+     44.0,
+     112.0
+    ],
+    "pts_pct": 0.5894,
+    "broke": false
+   },
+   {
+    "team": "Cambridge G",
+    "rank": "86",
+    "tab_place": 86,
+    "pts": 7,
+    "p_break": 0.0044,
+    "p_break_neutral": 0.0047,
+    "mean_pts": 6.324,
+    "mean_place": 86.4091,
+    "place_80": [
+     51.90000000000009,
+     116.0
+    ],
+    "pts_pct": 0.66075,
+    "broke": false
+   },
+   {
+    "team": "Princeton C",
+    "rank": "87",
+    "tab_place": 87,
+    "pts": 6,
+    "p_break": 0.0128,
+    "p_break_neutral": 0.0143,
+    "mean_pts": 7.0697,
+    "mean_place": 73.6843,
+    "place_80": [
+     39.0,
+     106.0
+    ],
+    "pts_pct": 0.2635,
+    "broke": false
+   },
+   {
+    "team": "Princeton D",
+    "rank": "88",
+    "tab_place": 88,
+    "pts": 6,
+    "p_break": 0.0067,
+    "p_break_neutral": 0.0084,
+    "mean_pts": 6.6608,
+    "mean_place": 80.8571,
+    "place_80": [
+     45.0,
+     111.0
+    ],
+    "pts_pct": 0.3502,
+    "broke": false
+   },
+   {
+    "team": "UChicago A",
+    "rank": "89",
+    "tab_place": 89,
+    "pts": 6,
+    "p_break": 0.0419,
+    "p_break_neutral": 0.0397,
+    "mean_pts": 7.6877,
+    "mean_place": 62.6523,
+    "place_80": [
+     27.0,
+     99.0
+    ],
+    "pts_pct": 0.1649,
+    "broke": false
+   },
+   {
+    "team": "Malaya D",
+    "rank": "90",
+    "tab_place": 90,
+    "pts": 6,
+    "p_break": 0.0149,
+    "p_break_neutral": 0.0112,
+    "mean_pts": 6.9831,
+    "mean_place": 75.1734,
+    "place_80": [
+     39.0,
+     108.0
+    ],
+    "pts_pct": 0.28515,
+    "broke": false
+   },
+   {
+    "team": "NYUAD B",
+    "rank": "91",
+    "tab_place": 91,
+    "pts": 6,
+    "p_break": 0.0139,
+    "p_break_neutral": 0.0115,
+    "mean_pts": 6.9358,
+    "mean_place": 75.9494,
+    "place_80": [
+     40.0,
+     108.0
+    ],
+    "pts_pct": 0.29495,
+    "broke": false
+   },
+   {
+    "team": "NYUAD D",
+    "rank": "92",
+    "tab_place": 92,
+    "pts": 6,
+    "p_break": 0.0081,
+    "p_break_neutral": 0.007,
+    "mean_pts": 6.5156,
+    "mean_place": 83.0901,
+    "place_80": [
+     45.0,
+     114.0
+    ],
+    "pts_pct": 0.3894,
+    "broke": false
+   },
+   {
+    "team": "Tartu C",
+    "rank": "93",
+    "tab_place": 93,
+    "pts": 6,
+    "p_break": 0.0046,
+    "p_break_neutral": 0.0037,
+    "mean_pts": 6.2768,
+    "mean_place": 87.1264,
+    "place_80": [
+     54.0,
+     116.0
+    ],
+    "pts_pct": 0.44134999999999996,
+    "broke": false
+   },
+   {
+    "team": "Bates A",
+    "rank": "94",
+    "tab_place": 94,
+    "pts": 6,
+    "p_break": 0.0122,
+    "p_break_neutral": 0.0105,
+    "mean_pts": 6.8651,
+    "mean_place": 77.2003,
+    "place_80": [
+     41.0,
+     109.0
+    ],
+    "pts_pct": 0.3103,
+    "broke": false
+   },
+   {
+    "team": "Cambridge E",
+    "rank": "95",
+    "tab_place": 95,
+    "pts": 6,
+    "p_break": 0.0062,
+    "p_break_neutral": 0.0054,
+    "mean_pts": 6.3623,
+    "mean_place": 85.7533,
+    "place_80": [
+     49.0,
+     115.0
+    ],
+    "pts_pct": 0.4259,
+    "broke": false
+   },
+   {
+    "team": "Budapest A",
+    "rank": "96",
+    "tab_place": 96,
+    "pts": 6,
+    "p_break": 0.009,
+    "p_break_neutral": 0.0082,
+    "mean_pts": 6.7225,
+    "mean_place": 79.8042,
+    "place_80": [
+     44.0,
+     110.0
+    ],
+    "pts_pct": 0.34104999999999996,
+    "broke": false
+   },
+   {
+    "team": "Imperial C",
+    "rank": "97",
+    "tab_place": 97,
+    "pts": 6,
+    "p_break": 0.0045,
+    "p_break_neutral": 0.0059,
+    "mean_pts": 6.2896,
+    "mean_place": 86.94,
+    "place_80": [
+     53.0,
+     116.0
+    ],
+    "pts_pct": 0.44015,
+    "broke": false
+   },
+   {
+    "team": "Colgate C",
+    "rank": "98",
+    "tab_place": 98,
+    "pts": 6,
+    "p_break": 0.008,
+    "p_break_neutral": 0.0086,
+    "mean_pts": 6.617,
+    "mean_place": 81.5164,
+    "place_80": [
+     45.0,
+     112.0
+    ],
+    "pts_pct": 0.36285,
+    "broke": false
+   },
+   {
+    "team": "TCD Phil B",
+    "rank": "99",
+    "tab_place": 99,
+    "pts": 6,
+    "p_break": 0.0014,
+    "p_break_neutral": 0.0009,
+    "mean_pts": 5.342,
+    "mean_place": 100.9119,
+    "place_80": [
+     70.0,
+     123.0
+    ],
+    "pts_pct": 0.66585,
+    "broke": false
+   },
+   {
+    "team": "Budapest B",
+    "rank": "100",
+    "tab_place": 100,
+    "pts": 6,
+    "p_break": 0.0007,
+    "p_break_neutral": 0.0005,
+    "mean_pts": 4.9802,
+    "mean_place": 105.8708,
+    "place_80": [
+     81.0,
+     124.0
+    ],
+    "pts_pct": 0.7467,
+    "broke": false
+   },
+   {
+    "team": "Edinburgh Φ",
+    "rank": "101",
+    "tab_place": 101,
+    "pts": 5,
+    "p_break": 0.0086,
+    "p_break_neutral": 0.0078,
+    "mean_pts": 6.6583,
+    "mean_place": 80.8792,
+    "place_80": [
+     44.0,
+     111.0
+    ],
+    "pts_pct": 0.15905,
+    "broke": false
+   },
+   {
+    "team": "UCD L&H C",
+    "rank": "102",
+    "tab_place": 102,
+    "pts": 5,
+    "p_break": 0.0172,
+    "p_break_neutral": 0.0168,
+    "mean_pts": 7.1027,
+    "mean_place": 73.1079,
+    "place_80": [
+     38.0,
+     106.0
+    ],
+    "pts_pct": 0.10335,
+    "broke": false
+   },
+   {
+    "team": "Middlebury D",
+    "rank": "103",
+    "tab_place": 103,
+    "pts": 5,
+    "p_break": 0.0037,
+    "p_break_neutral": 0.0043,
+    "mean_pts": 6.0326,
+    "mean_place": 90.8999,
+    "place_80": [
+     57.0,
+     118.0
+    ],
+    "pts_pct": 0.27845,
+    "broke": false
+   },
+   {
+    "team": "Yale B",
+    "rank": "104",
+    "tab_place": 104,
+    "pts": 5,
+    "p_break": 0.0042,
+    "p_break_neutral": 0.0045,
+    "mean_pts": 6.0558,
+    "mean_place": 90.5856,
+    "place_80": [
+     58.0,
+     117.0
+    ],
+    "pts_pct": 0.27145,
+    "broke": false
+   },
+   {
+    "team": "Reading B",
+    "rank": "105",
+    "tab_place": 105,
+    "pts": 5,
+    "p_break": 0.0007,
+    "p_break_neutral": 0.0015,
+    "mean_pts": 5.3802,
+    "mean_place": 100.7047,
+    "place_80": [
+     72.0,
+     122.0
+    ],
+    "pts_pct": 0.42405000000000004,
+    "broke": false
+   },
+   {
+    "team": "TCD Hist F and S",
+    "rank": "106",
+    "tab_place": 106,
+    "pts": 5,
+    "p_break": 0.0021,
+    "p_break_neutral": 0.0022,
+    "mean_pts": 5.8572,
+    "mean_place": 93.7401,
+    "place_80": [
+     61.0,
+     119.0
+    ],
+    "pts_pct": 0.3116,
+    "broke": false
+   },
+   {
+    "team": "Stanford C",
+    "rank": "107",
+    "tab_place": 107,
+    "pts": 5,
+    "p_break": 0.0109,
+    "p_break_neutral": 0.0113,
+    "mean_pts": 6.8062,
+    "mean_place": 78.1868,
+    "place_80": [
+     42.0,
+     110.0
+    ],
+    "pts_pct": 0.14415,
+    "broke": false
+   },
+   {
+    "team": "Colgate B",
+    "rank": "108",
+    "tab_place": 108,
+    "pts": 5,
+    "p_break": 0.0023,
+    "p_break_neutral": 0.0022,
+    "mean_pts": 5.7813,
+    "mean_place": 94.9132,
+    "place_80": [
+     63.0,
+     119.0
+    ],
+    "pts_pct": 0.326,
+    "broke": false
+   },
+   {
+    "team": "Malaya F",
+    "rank": "109",
+    "tab_place": 109,
+    "pts": 5,
+    "p_break": 0.0028,
+    "p_break_neutral": 0.0017,
+    "mean_pts": 5.8462,
+    "mean_place": 94.0657,
+    "place_80": [
+     62.0,
+     119.0
+    ],
+    "pts_pct": 0.31275,
+    "broke": false
+   },
+   {
+    "team": "CCU A",
+    "rank": "110",
+    "tab_place": 110,
+    "pts": 5,
+    "p_break": 0.0021,
+    "p_break_neutral": 0.0017,
+    "mean_pts": 5.7004,
+    "mean_place": 96.0666,
+    "place_80": [
+     64.0,
+     120.0
+    ],
+    "pts_pct": 0.34825,
+    "broke": false
+   },
+   {
+    "team": "RUN DS",
+    "rank": "111",
+    "tab_place": 111,
+    "pts": 5,
+    "p_break": 0.0013,
+    "p_break_neutral": 0.0011,
+    "mean_pts": 5.204,
+    "mean_place": 102.9521,
+    "place_80": [
+     76.0,
+     123.0
+    ],
+    "pts_pct": 0.46695,
+    "broke": false
+   },
+   {
+    "team": "Bates C",
+    "rank": "112",
+    "tab_place": 112,
+    "pts": 5,
+    "p_break": 0.0008,
+    "p_break_neutral": 0.0012,
+    "mean_pts": 5.2781,
+    "mean_place": 101.9487,
+    "place_80": [
+     74.0,
+     123.0
+    ],
+    "pts_pct": 0.4454,
+    "broke": false
+   },
+   {
+    "team": "Galway A",
+    "rank": "113",
+    "tab_place": 113,
+    "pts": 5,
+    "p_break": 0.0051,
+    "p_break_neutral": 0.0063,
+    "mean_pts": 6.4313,
+    "mean_place": 84.635,
+    "place_80": [
+     48.0,
+     115.0
+    ],
+    "pts_pct": 0.19705,
+    "broke": false
+   },
+   {
+    "team": "Bates B",
+    "rank": "114",
+    "tab_place": 114,
+    "pts": 5,
+    "p_break": 0.0001,
+    "p_break_neutral": 0.0003,
+    "mean_pts": 4.6086,
+    "mean_place": 110.0688,
+    "place_80": [
+     86.0,
+     125.0
+    ],
+    "pts_pct": 0.61105,
+    "broke": false
+   },
+   {
+    "team": "TCD Phil l g&p",
+    "rank": "116",
+    "tab_place": 115,
+    "pts": 4,
+    "p_break": 0.0007,
+    "p_break_neutral": 0.0002,
+    "mean_pts": 4.8832,
+    "mean_place": 106.9258,
+    "place_80": [
+     82.0,
+     125.0
+    ],
+    "pts_pct": 0.2987,
+    "broke": false
+   },
+   {
+    "team": "Brown B",
+    "rank": "117",
+    "tab_place": 116,
+    "pts": 4,
+    "p_break": 0.0015,
+    "p_break_neutral": 0.0016,
+    "mean_pts": 5.5732,
+    "mean_place": 97.7937,
+    "place_80": [
+     65.0,
+     121.0
+    ],
+    "pts_pct": 0.17385,
+    "broke": false
+   },
+   {
+    "team": "CCU B",
+    "rank": "118",
+    "tab_place": 117,
+    "pts": 4,
+    "p_break": 0.0007,
+    "p_break_neutral": 0.0003,
+    "mean_pts": 5.1543,
+    "mean_place": 103.5122,
+    "place_80": [
+     78.0,
+     123.0
+    ],
+    "pts_pct": 0.2463,
+    "broke": false
+   },
+   {
+    "team": "DC Bonn A",
+    "rank": "119",
+    "tab_place": 118,
+    "pts": 4,
+    "p_break": 0.0005,
+    "p_break_neutral": 0.0006,
+    "mean_pts": 4.6685,
+    "mean_place": 109.2697,
+    "place_80": [
+     84.0,
+     125.0
+    ],
+    "pts_pct": 0.3507,
+    "broke": false
+   },
+   {
+    "team": "Middlebury C",
+    "rank": "120",
+    "tab_place": 119,
+    "pts": 4,
+    "p_break": 0.0004,
+    "p_break_neutral": 0.0003,
+    "mean_pts": 4.7209,
+    "mean_place": 108.724,
+    "place_80": [
+     84.0,
+     125.0
+    ],
+    "pts_pct": 0.34135,
+    "broke": false
+   },
+   {
+    "team": "Middlebury A",
+    "rank": "121",
+    "tab_place": 120,
+    "pts": 4,
+    "p_break": 0.0011,
+    "p_break_neutral": 0.0004,
+    "mean_pts": 5.0081,
+    "mean_place": 105.2756,
+    "place_80": [
+     80.0,
+     124.0
+    ],
+    "pts_pct": 0.2784,
+    "broke": false
+   },
+   {
+    "team": "Lincoln's Inn B",
+    "rank": "122",
+    "tab_place": 121,
+    "pts": 4,
+    "p_break": 0.0003,
+    "p_break_neutral": 0.0,
+    "mean_pts": 4.1362,
+    "mean_place": 114.4718,
+    "place_80": [
+     97.0,
+     127.0
+    ],
+    "pts_pct": 0.48225,
+    "broke": false
+   },
+   {
+    "team": "Budapest C",
+    "rank": "123",
+    "tab_place": 122,
+    "pts": 3,
+    "p_break": 0.0005,
+    "p_break_neutral": 0.0002,
+    "mean_pts": 4.3636,
+    "mean_place": 112.4388,
+    "place_80": [
+     92.0,
+     127.0
+    ],
+    "pts_pct": 0.19390000000000002,
+    "broke": false
+   },
+   {
+    "team": "Lincoln's Inn A",
+    "rank": "124",
+    "tab_place": 123,
+    "pts": 3,
+    "p_break": 0.0001,
+    "p_break_neutral": 0.0001,
+    "mean_pts": 4.0789,
+    "mean_place": 114.555,
+    "place_80": [
+     96.0,
+     127.0
+    ],
+    "pts_pct": 0.26285000000000003,
+    "broke": false
+   },
+   {
+    "team": "UCD C",
+    "rank": "125",
+    "tab_place": 124,
+    "pts": 3,
+    "p_break": 0.0002,
+    "p_break_neutral": 0.0001,
+    "mean_pts": 3.7076,
+    "mean_place": 117.8336,
+    "place_80": [
+     101.0,
+     128.0
+    ],
+    "pts_pct": 0.3405,
+    "broke": false
+   },
+   {
+    "team": "UCD B",
+    "rank": "126",
+    "tab_place": 125,
+    "pts": 3,
+    "p_break": 0.0,
+    "p_break_neutral": 0.0001,
+    "mean_pts": 3.7041,
+    "mean_place": 118.0672,
+    "place_80": [
+     101.0,
+     128.0
+    ],
+    "pts_pct": 0.3333,
+    "broke": false
+   },
+   {
+    "team": "UCD LawSoc C",
+    "rank": "130",
+    "tab_place": 126,
+    "pts": 2,
+    "p_break": 0.0001,
+    "p_break_neutral": 0.0,
+    "mean_pts": 3.3548,
+    "mean_place": 119.9103,
+    "place_80": [
+     107.0,
+     129.0
+    ],
+    "pts_pct": 0.2078,
+    "broke": false
+   },
+   {
+    "team": "Budapest D",
+    "rank": "131",
+    "tab_place": 127,
+    "pts": 2,
+    "p_break": 0.0001,
+    "p_break_neutral": 0.0001,
+    "mean_pts": 3.4595,
+    "mean_place": 119.1567,
+    "place_80": [
+     102.0,
+     128.0
+    ],
+    "pts_pct": 0.19169999999999998,
+    "broke": false
+   },
+   {
+    "team": "Middlebury B",
+    "rank": "132",
+    "tab_place": 128,
+    "pts": 2,
+    "p_break": 0.0001,
+    "p_break_neutral": 0.0,
+    "mean_pts": 3.2329,
+    "mean_place": 120.7728,
+    "place_80": [
+     110.0,
+     129.0
+    ],
+    "pts_pct": 0.22540000000000002,
+    "broke": false
+   },
+   {
+    "team": "UCD L&H Team A",
+    "rank": "136",
+    "tab_place": 129,
+    "pts": 0,
+    "p_break": 0.0,
+    "p_break_neutral": 0.0,
+    "mean_pts": 2.1811,
+    "mean_place": 124.3082,
+    "place_80": [
+     115.0,
+     129.0
+    ],
+    "pts_pct": 0.1153,
+    "broke": false
+   }
+  ],
+  "summary": {
+   "overlap_real": 10.9253,
+   "overlap_neutral": 11.0324,
+   "sim_hist": [
+    0.4467,
+    0.6447,
+    1.823,
+    4.3675,
+    7.9977,
+    12.3732,
+    16.4198,
+    19.3331,
+    19.6163,
+    17.1998,
+    13.0519,
+    8.3765,
+    4.4652,
+    1.8442,
+    0.6682,
+    0.3722
+   ],
+   "real_hist": [
+    1,
+    0,
+    3,
+    4,
+    7,
+    14,
+    14,
+    20,
+    19,
+    19,
+    12,
+    9,
+    5,
+    1,
+    0,
+    1
+   ],
+   "pit": [
+    0.88455,
+    0.7519,
+    0.7126,
+    0.79115,
+    0.7702,
+    0.72905,
+    0.83925,
+    0.6900000000000001,
+    0.6405000000000001,
+    0.41875,
+    0.7144,
+    0.60415,
+    0.7827500000000001,
+    0.72095,
+    0.82985,
+    0.7912,
+    0.41910000000000003,
+    0.4536,
+    0.714,
+    0.5767,
+    0.6194,
+    0.52065,
+    0.6628999999999999,
+    0.60605,
+    0.57365,
+    0.7032499999999999,
+    0.82815,
+    0.70885,
+    0.36475,
+    0.49885,
+    0.36205,
+    0.3759,
+    0.50915,
+    0.55975,
+    0.7676000000000001,
+    0.53325,
+    0.6536000000000001,
+    0.68325,
+    0.7107,
+    0.6031,
+    0.703,
+    0.7552000000000001,
+    0.585,
+    0.74185,
+    0.66245,
+    0.67565,
+    0.63915,
+    0.3513,
+    0.3467,
+    0.5125500000000001,
+    0.36824999999999997,
+    0.3993,
+    0.5586,
+    0.39854999999999996,
+    0.66765,
+    0.49855000000000005,
+    0.5141,
+    0.7685,
+    0.56025,
+    0.6942,
+    0.49319999999999997,
+    0.60775,
+    0.7717,
+    0.66685,
+    0.6695,
+    0.8541,
+    0.2435,
+    0.33325,
+    0.3397,
+    0.3068,
+    0.4865,
+    0.43555,
+    0.3374,
+    0.429,
+    0.40285,
+    0.4133,
+    0.39859999999999995,
+    0.3231,
+    0.6849500000000001,
+    0.6126,
+    0.46995,
+    0.6241,
+    0.75245,
+    0.40565,
+    0.5894,
+    0.66075,
+    0.2635,
+    0.3502,
+    0.1649,
+    0.28515,
+    0.29495,
+    0.3894,
+    0.44134999999999996,
+    0.3103,
+    0.4259,
+    0.34104999999999996,
+    0.44015,
+    0.36285,
+    0.66585,
+    0.7467,
+    0.15905,
+    0.10335,
+    0.27845,
+    0.27145,
+    0.42405000000000004,
+    0.3116,
+    0.14415,
+    0.326,
+    0.31275,
+    0.34825,
+    0.46695,
+    0.4454,
+    0.19705,
+    0.61105,
+    0.2987,
+    0.17385,
+    0.2463,
+    0.3507,
+    0.34135,
+    0.2784,
+    0.48225,
+    0.19390000000000002,
+    0.26285000000000003,
+    0.3405,
+    0.3333,
+    0.2078,
+    0.19169999999999998,
+    0.22540000000000002,
+    0.1153
+   ],
+   "exp_breakers_rebreak": 8.5548,
+   "teams_with_p50": 8
+  }
+ }
+}

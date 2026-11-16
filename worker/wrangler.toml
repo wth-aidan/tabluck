@@ -1,0 +1,10 @@
+# Only needed if you deploy the Worker from the command line (npx wrangler deploy).
+# Deploying by pasting worker.js into the Cloudflare dashboard works without this file.
+name = "tab-fetch"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Set to your site's address once it is live, e.g. "https://tabluck.pages.dev"
+SITE_ORIGINS = ""
+CACHE_SECONDS = "3600"
